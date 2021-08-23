@@ -5,7 +5,7 @@ namespace App\Models;
 use App\Utils\Database;
 use PDO;
 
-class AppUser extends CoreModel
+class Article extends CoreModel
 {
     private $title;
     private $resume;

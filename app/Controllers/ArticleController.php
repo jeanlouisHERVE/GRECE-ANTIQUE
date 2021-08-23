@@ -9,7 +9,7 @@ class ArticleController extends CoreController
     public function list()
     {
        
-        $listeDesCategories = Article::findAll();
+        $listeDesArticles = Article::findAll();
 
             $this->show('article/list', [
             'articles' => $listeDesArticles,
