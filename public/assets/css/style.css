@@ -1,3 +1,216 @@
 .col-actions {
   width: 60px;
 }
+/* -------------- */
+/* PAGE D'ACCUEIL */
+/* -------------- */
+
+
+/* NAVBAR */
+
+.navbar {
+  height: 60px;
+  background-color:white;
+
+ }
+
+.navbar--container {
+  height: 100%;
+  background-color:white;
+}
+
+.jumbotron {
+  background-image: url("../img/archaeology-4881001.jpg");
+  background-size: cover;
+}
+
+.navbar--maintitle {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large ; 
+  color:black;
+
+}
+
+.dropdown-menu {
+  color:black;
+
+}
+
+.navbar--menu .nav-item {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+  color:black;
+
+}
+
+.navbar--menu .nav-item .btn-link {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+
+}
+
+.nav-item .nav-link {
+  color:black;
+
+}
+
+.nav--connexion {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+
+}
+
+.nav--connexion .nav-link {
+  color:black
+}
+
+.collapse {
+  background-color: white;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100vw;
+  border-top: 1px black solid;
+  height: 50px;
+}
+
+
+/* BODY */
+body {
+  background-color:purple;
+
+}
+
+/* HEADER */
+
+/* CONTAINER */
+
+.main--container {
+  
+  height: 100%; 
+  padding-left:0px; 
+  padding-right:0px; 
+  width:100vw;
+
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  height:100vh;
+  margin-bottom: 0px;
+}
+
+.jumbotron--homeTitle {
+  font-family: 'Bebas Neue', cursive; 
+  color:black;
+  background-color: white;
+
+}
+
+.jumbotron--subTitle {
+  color:black;
+  background-color: white;
+}
+
+/* WELCOME MESSAGE */
+.welcome--message {
+  background: white; 
+  margin-left:0px; 
+  margin-right:0px; 
+}
+
+
+.welcome--presentation {
+  z-index: 6; 
+  height: 100vh; 
+  
+  
+
+}
+
+
+.welcome--presentation--text {
+  font-size: larger; 
+  font-family: 'Lexend', sans-serif;
+
+}
+
+.welcome--thank {
+  font-size: larger; 
+  font-family: 'Lexend', sans-serif;
+
+}
+
+.welcome--picture {
+  width: 100%;
+  opacity: 0.7;
+}
+
+.welcome--button {
+  margin-top: 50px;
+  width: 50%;
+  color: #7bc9fe;
+  border: #7bc9fe solid 2px;
+  font-weight: 700;
+}
+.welcome--button:hover {
+  background-color: #7bc9fe;
+  border: #7bc9fe solid 1px;
+  font-family: 'Lexend', sans-serif;
+}
+
+/* FAVORITE ARTICLES */
+.favorite-articles {
+  background: #7bc9fe; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.card--link{
+  align-self: center;
+}
+
+
+/* FOOTER */
+
+.footer--legal {
+  background-color: white;
+  width: 100%;
+
+}
+.footer--li {
+  list-style-type: none; 
+  font-family: 'Lexend', sans-serif; 
+  color:black;
+
+}
+
+
+/* ---------------- */
+/* LISTE D'ARTICLES */
+/* ---------------- */
+
+/* MENU DES ARTICLES */
+
+.list--article--left {
+  background-color: tomato;
+  height: 100vh;
+
+
+}
+
+
+
+
+/* LISTE DES ARTICLES */
+
+.list--article--left {
+  background-color:teal;
+  height: 100vh;
+
+
+}

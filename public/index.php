@@ -28,6 +28,16 @@ $router->map(
     'main-home'
 );
 
+$router->map(
+    'GET',
+    '/article/list',
+    [
+        'method' => 'list',
+        'controller' => '\App\Controllers\ArticleController' 
+    ],
+    'article-list'
+);
+
 
 
 $match = $router->match();
