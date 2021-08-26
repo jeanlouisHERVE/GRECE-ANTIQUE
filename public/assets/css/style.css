@@ -62,18 +62,22 @@
 }
 
 .nav--connexion .nav-link {
-  color:black
+  color:black;
 }
 
-.collapse {
+.contenu {
   background-color: white;
-  margin-right: 0px;
-  margin-left: 0px;
-  width: 100vw;
-  border-top: 1px black solid;
-  height: 50px;
+
 }
 
+.contenu--item:hover {
+    border-bottom: solid 1px black;
+    padding-bottom: 1px;
+}
+
+.open .arrow{
+  transform: rotate(90deg);
+}
 
 /* BODY */
 body {
