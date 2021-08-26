@@ -33,7 +33,7 @@
                 <p class="welcome--thank"> 
                     Bonne lecture
                 </p>
-                <button type="button" class="btn btn-outline-info welcome--button align-self-center">Liste des articles</button>
+                <button type="button"  class="btn btn-outline-info welcome--button align-self-center"><a href="<?= $router->generate('article-list') ?>">Liste des articles</a></button>
             </div>
            
             <aside class="right col-5 ml-4" >

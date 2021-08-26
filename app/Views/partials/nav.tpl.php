@@ -3,13 +3,13 @@
         <div class="narbar-logo d-flex justify-content-center">
             <a class="navbar--mainlogo logo" href="#">
                 <img src="" alt="" width="auto" height="100%" class="d-inline-block align-text-top" alt="">
-                <a class="navbar--maintitle ml-3">grece antique</a>
+                <a class="navbar--maintitle ml-3" href="<?= $router->generate('main-home') ?>">grece antique</a>
             </a>
         </div>
         <div class="navbar--menu d-flex justify-content-center align-items-center pt-0 ">
             <ul class="nav justify-content-center  ">
                 <li class="nav-item">
-                    <a class="nav-link nav-item-btn1 active" aria-current="page" href="#">
+                    <a class="nav-link nav-item-btn1 active" aria-current="page" href="<?= $router->generate('main-home') ?>">
                         Accueil
                     </a>
                 </li>
