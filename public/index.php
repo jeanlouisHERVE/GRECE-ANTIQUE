@@ -83,17 +83,17 @@ $router->map(
 
 $router->map(
     'GET',
-    '/article/contact',
+    '/contact',
     [
         'method' => 'contact',
-        'controller' => '\App\Controllers\ArticleController' 
+        'controller' => '\App\Controllers\MainController' 
     ],
     'contact'
 );
 
 $router->map(
     'POST',
-    '/article/contact',
+    '/contact',
     [
         'method' => 'contactPost',
         'controller' => '\App\Controllers\MainController' 

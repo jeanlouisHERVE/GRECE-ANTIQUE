@@ -10,29 +10,28 @@ class ArticleController extends CoreController
 {
     public function list()
     {
-        $this->show('main/articleList');
+        $this->show('article/articleList');
     }
    
 
-
     public function category()
     {
-        $this->show('main/categoryarticle');
+        $this->show('article/categoryarticle');
     }
 
 
     public function view()
     {
-        $this->show('main/mostviewedarticle');
+        $this->show('article/mostviewedarticle');
     }
 
     public function rate()
     {
-        $this->show('main/bestratedarticle');
+        $this->show('article/bestratedarticle');
     }
 
     public function alphabetical()
     {
-        $this->show('main/alphabeticalorderarticle');
+        $this->show('article/alphabeticalorderarticle');
     }
 }
