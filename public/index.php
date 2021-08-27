@@ -38,7 +38,68 @@ $router->map(
     'article-list'
 );
 
+$router->map(
+    'GET',
+    '/article/categories',
+    [
+        'method' => 'category',
+        'controller' => '\App\Controllers\ArticleController' 
+    ],
+    'article-categories'
+);
 
+$router->map(
+    'GET',
+    '/article/vu',
+    [
+        'method' => 'view',
+        'controller' => '\App\Controllers\ArticleController' 
+    ],
+    'article-views'
+);
+
+$router->map(
+    'GET',
+    '/article/note',
+    [
+        'method' => 'rate',
+        'controller' => '\App\Controllers\ArticleController' 
+    ],
+    'article-rates'
+);
+
+
+
+$router->map(
+    'GET',
+    '/article/alphabet',
+    [
+        'method' => 'alphabetical',
+        'controller' => '\App\Controllers\ArticleController' 
+    ],
+    'article-alphabetical'
+);
+
+
+$router->map(
+    'GET',
+    '/article/contact',
+    [
+        'method' => 'contact',
+        'controller' => '\App\Controllers\ArticleController' 
+    ],
+    'contact'
+);
+
+$router->map(
+    'POST',
+    '/article/contact',
+    [
+        'method' => 'contactPost',
+        'controller' => '\App\Controllers\MainController' 
+    ],
+    'contactPost'
+);
 
 $match = $router->match();
     

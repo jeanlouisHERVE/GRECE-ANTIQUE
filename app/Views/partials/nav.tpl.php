@@ -9,23 +9,23 @@
         <div class="navbar--menu d-flex justify-content-center align-items-center pt-0 ">
             <ul class="nav justify-content-center  ">
                 <li class="nav-item">
-                    <a class="nav-link nav-item-btn1 active" aria-current="page" href="<?= $router->generate('main-home') ?>">
+                    <a class="nav-link nav-link-navbar nav-item-btn1 active" aria-current="page" href="<?= $router->generate('main-home') ?>">
                         Accueil
                     </a>
                 </li>
                 <li class="nav-item nav-item-btn nav-link--article ">
-                    <a class="nav-link d-flex align-items-center" href="#">
+                    <a class="nav-link nav-link-navbar d-flex align-items-center" href="#">
                         Articles
                         <div class="arrow ml-1">►</div>
                     </a>
 
                 <li class="nav-item">
-                    <a class="nav-link " href="#">
+                    <a class="nav-link nav-link-navbar " href="<?= $router->generate('contact')?>">
                         Contact
                     </a>
                 </li>
                 <div class="nav--connexion ">
-                    <a class="nav-link " href="#">
+                    <a class="nav-link nav-link-navbar" href="#">
                         Connexion
                     </a>
                 </div>
@@ -43,22 +43,22 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contenu--item " href="#">
+                        <a class="nav-link contenu--item " href="<?= $router->generate('article-categories') ?>">
                             Liste par catégorie
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link contenu--item" href="#">
+                        <a class="nav-link contenu--item" href="<?= $router->generate('article-views') ?>">
                             Les plus vus
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contenu--item" href="#">
+                        <a class="nav-link contenu--item" href="<?= $router->generate('article-rates') ?>">
                             Les mieux notés
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contenu--item" href="#">
+                        <a class="nav-link contenu--item" href="<?= $router->generate('article-alphabetical') ?>">
                             Par ordre alphabétique
                         </a>
                     </li>

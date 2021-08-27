@@ -18,4 +18,20 @@ class MainController extends CoreController
            
         ]);
     }
+
+    public function contact()
+    {
+       
+        $this->show('main/contact', [
+           
+        ]);
+    }
+
+    public function contactPost()
+    {
+       
+        $this->show('main/contact', [
+           
+        ]);
+    }
 }

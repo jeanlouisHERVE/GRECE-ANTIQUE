@@ -1,4 +1,3 @@
-
 <!-- ************************body************************ -->
 
 <body>
@@ -20,7 +19,7 @@
         ?>
                <aside class="left col-10 list--article--right">
                 <h1 class="list--article--main--title">
-                    Liste des articles
+                    les articles les plus vus
                 </h1>
 
 

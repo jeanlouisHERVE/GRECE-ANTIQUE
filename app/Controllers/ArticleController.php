@@ -10,25 +10,29 @@ class ArticleController extends CoreController
 {
     public function list()
     {
-       
-
         $this->show('main/articleList');
     }
    
 
 
-    public static function find($ArticleId)
+    public function category()
     {
-        $pdo = Database::getPDO();
+        $this->show('main/categoryarticle');
+    }
 
-        $sql = '
-        SELECT *
-        FROM article
-        WHERE id = ' . $ArticleId;
 
-        $pdoStatement = $pdo->query($sql);
+    public function view()
+    {
+        $this->show('main/mostviewedarticle');
+    }
 
-        $brand = $pdoStatement->fetchObject(self::class);
-        return $brand;
+    public function rate()
+    {
+        $this->show('main/bestratedarticle');
+    }
+
+    public function alphabetical()
+    {
+        $this->show('main/alphabeticalorderarticle');
     }
 }

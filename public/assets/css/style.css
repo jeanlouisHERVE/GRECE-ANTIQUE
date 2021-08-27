@@ -47,6 +47,7 @@
 .navbar--menu .nav-item .btn-link {
   font-family: 'Bebas Neue', cursive;
   font-size: x-large;
+ 
 
 }
 
@@ -67,12 +68,20 @@
 
 .contenu {
   background-color: white;
+  padding-bottom: 10px;
+}
 
+.contenu--item{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 15px;
+  padding-bottom: 1px;
 }
 
 .contenu--item:hover {
     border-bottom: solid 1px black;
-    padding-bottom: 1px;
+    
+    
 }
 
 .open .arrow{
@@ -82,7 +91,7 @@
 /* BODY */
 body {
   background-color:purple;
-
+  margin-top: 60px;
 }
 
 /* HEADER */
@@ -200,12 +209,6 @@ body {
 
 /* MENU DES ARTICLES */
 
-.list--article--left {
-  background-color: tomato;
-  height: 100vh;
-
-
-}
 
 
 
@@ -215,6 +218,13 @@ body {
 .list--article--left {
   background-color:teal;
   height: 100vh;
+  padding-top: 30px;
 
+}
 
+.list--article--right h1 {
+  padding: 30px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: xx-large;
+  color:black;
 }
