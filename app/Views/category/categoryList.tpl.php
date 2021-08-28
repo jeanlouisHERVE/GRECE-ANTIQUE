@@ -20,11 +20,12 @@
         <!-- ************************right side************************ -->
         <aside class="right col-10 list--article--right">
                 <h1 class="list--article--main--title">
-                    Liste des articles par catégorie
+                    Liste des categories
                 </h1>
             <div class="category--list">
             <?php foreach($categories as $categorie): ?>
-                <h2><?= $categorie->getName()?></h2>
+                
+                <a href="<?= $router->generate('articleByCategory', ['id' => $categorie->getId()]) ?>" class="btn btn-sm btn-warning"><h2><?= $categorie->getName()?></h2></a>
             <?php endforeach; ?>
 
             </div>

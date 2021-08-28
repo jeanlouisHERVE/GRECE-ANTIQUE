@@ -14,16 +14,25 @@ class ArticleController extends CoreController
         $titleList = Article::titleList();
         $this->show('article/articleList',['titleList' => $titleList,]);
     }
+
+    public function detailArticle($params)
+    {
+        $articleId = $params['id'];
+        $details = new Article();
+        $articleDetails = $details->find($articleId);
+
+        $this->show('article/article',['articleDetails' => $articleDetails,]);
+    }
+
    
 
-    public function category()
+    public function categories()
     {
         $Categories = Category::findAll();
 
-        $this->show('article/categoryarticle', ['categories' => $Categories,]);
+        $this->show('category/categoryList', ['categories' => $Categories,]);
     }
-
-
+    
     public function view()
     {
         $this->show('article/mostviewedarticle');

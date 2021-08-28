@@ -20,23 +20,16 @@
         <!-- ************************right side************************ -->
         <aside class="right col-10 list--article--right">
                 <h1 class="list--article--main--title">
-                    Liste des articles
+                    Liste des articles par catégorie
                 </h1>
-                <?php foreach($titleList as $title): ?>
-                    <a href="<?= $router->generate('articleById', ['id' => $title->getId()]) ?>"><h2><?= $title->getTitle()?></h2></a>
-                <?php endforeach; ?>
+            <div class="category--list">
+         
 
-             
+            </div>
+
+
+
 
 
         </aside>
 
-
-
-
-
-
-
-        </div>
-
-  

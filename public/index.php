@@ -40,13 +40,15 @@ $router->map(
 
 $router->map(
     'GET',
-    '/article/categories',
+    '/categories',
     [
-        'method' => 'category',
+        'method' => 'categories',
         'controller' => '\App\Controllers\ArticleController' 
     ],
     'article-categories'
 );
+
+
 
 $router->map(
     'GET',
@@ -80,6 +82,25 @@ $router->map(
     'article-alphabetical'
 );
 
+$router->map(
+    'GET', 
+    '/article/[i:id]', 
+    [
+        'method' => 'detailArticle',
+        'controller' => 'ArticleController',
+    ], 
+    'articleById'
+);
+
+$router->map(
+    'GET', 
+    '/categories/[i:id]', 
+    [
+        'method' => 'ArticlesByCategorie',
+        'controller' => 'ArticleController',
+    ], 
+    'articleByCategory'
+);
 
 $router->map(
     'GET',

@@ -263,22 +263,26 @@ body {
 /* ---------------- */
 
 .contact--body {
-  background: #7bc9fe;
+  background: white;
+  
 }
+
+
 
 .left--contact {
   height: 100vh;
-  padding: 0px
+  padding: 0px;
+
   
 }
 
 .left--contact--picture {
   background: url('../img/statue-8450_1920.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top;
   height: 100vh;
   width: auto;
-  
+  margin-left: 0px;
 }
 
 
@@ -289,7 +293,6 @@ body {
   align-content: center;
   justify-content: center;
   background: white;
-  
 }
 
 .right--contact .contact--title {
@@ -328,5 +331,4 @@ body {
 
 .contact--imput {
   border: solid 1px black ;
-
 }
