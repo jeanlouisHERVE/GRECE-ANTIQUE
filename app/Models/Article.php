@@ -18,9 +18,10 @@ class Article extends CoreModel
         $pdo = Database::getPDO();
 
         $sql = '
-            SELECT *
-            FROM article
-            WHERE id = :id
+            SELECT * FROM `article` 
+            INNER JOIN `category` ON article.category_id = category.id 
+            INNER JOIN `author` ON article.author_id = author.id
+            WHERE article.id = :id 
         ';
 
         $pdoStatement = $pdo->prepare($sql);
