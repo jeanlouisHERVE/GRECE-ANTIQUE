@@ -32,7 +32,7 @@ $router->map(
     'GET',
     '/article/list',
     [
-        'method' => 'list',
+        'method' => 'titleList',
         'controller' => '\App\Controllers\ArticleController' 
     ],
     'article-list'

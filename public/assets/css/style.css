@@ -20,8 +20,9 @@
 }
 
 .jumbotron {
-  background-image: url("../img/archaeology-4881001.jpg");
+  background-image: url("../img/epidaure.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .navbar--maintitle {
@@ -262,7 +263,7 @@ body {
 /* ---------------- */
 
 .contact--body {
-  background: black;
+  background: #7bc9fe;
 }
 
 .left--contact {
@@ -272,7 +273,7 @@ body {
 }
 
 .left--contact--picture {
-  background: url('../img/archaeology-4881001.jpg');
+  background: url('../img/statue-8450_1920.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;

@@ -22,7 +22,9 @@
                 <h1 class="list--article--main--title">
                     Liste des articles
                 </h1>
-
+                <?php foreach($titleList as $title): ?>
+                    <h2><?= $title->getTitle()?></h2>
+                <?php endforeach; ?>
 
 
 

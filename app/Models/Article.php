@@ -33,13 +33,26 @@ class Article extends CoreModel
     public static function findAll()
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT * FROM `article`';
+        $sql = 'SELECT `id`,`title` FROM `article`';
         $pdoStatement = $pdo->prepare($sql);
         $pdoStatement->execute();
-        $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        $titleList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
         
-        return $results;
+        return $titleList;
     }
+
+    public static function titleList()
+    {
+        $pdo = Database::getPDO();
+        $sql = 'SELECT `id`,`title` FROM `article`';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute();
+        $titleList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        
+        return $titleList;
+    }
+
+    
 
     /**
      * Get the value of title
