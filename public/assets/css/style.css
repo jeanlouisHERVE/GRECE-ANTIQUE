@@ -2,7 +2,7 @@
   width: 60px;
 }
 /* -------------- */
-/* PAGE D'ACCUEIL */
+/* ---NAVBAR----- */
 /* -------------- */
 
 
@@ -88,6 +88,11 @@
   transform: rotate(90deg);
 }
 
+/* ---------------------- */
+/* ---PAGE D'ACCUEIL----- */
+/* ---------------------- */
+
+
 /* BODY */
 body {
   background-color:purple;
@@ -166,12 +171,20 @@ body {
   color: #7bc9fe;
   border: #7bc9fe solid 2px;
   font-weight: 700;
+  font-family: 'Lexend', sans-serif;
 }
+
 .welcome--button:hover {
   background-color: #7bc9fe;
   border: #7bc9fe solid 1px;
   font-family: 'Lexend', sans-serif;
+  color: white;
 }
+
+.welcome--button--a {
+  text-decoration: none;
+  }
+
 
 /* FAVORITE ARTICLES */
 .favorite-articles {
@@ -220,7 +233,11 @@ body {
 
 /* MENU DES ARTICLES */
 
+.collapse--menu--left-side {
+  display: flex;
+  flex-direction: column;
 
+}
 
 
 
@@ -230,7 +247,6 @@ body {
   background-color:teal;
   height: 100vh;
   padding-top: 30px;
-
 }
 
 .list--article--right h1 {
@@ -245,18 +261,71 @@ body {
 /* --PAGE CONTACT-- */
 /* ---------------- */
 
+.contact--body {
+  background: black;
+}
+
 .left--contact {
   height: 100vh;
-  background-image: url('/public/assets/img/athens-3411147.jpg');
-  background-size: cover;
+  padding: 0px
+  
 }
+
+.left--contact--picture {
+  background: url('../img/archaeology-4881001.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: auto;
+  
+}
+
 
 .right--contact {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background: white;
+  
 }
 
 .right--contact .contact--title {
   font-family: 'Bebas Neue', cursive; 
   color:black;
-  padding: 100px 30px;
+  padding: 0px 15px;
+}
+
+.right--contact--content{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.right--contact h2 {
+  font-family: 'Bebas Neue', cursive; 
+  color:black;
+  font-size: large;
+  padding: 0px 15px;
+}
+
+.right--contact form {
+  font-family: 'Lexend', sans-serif; 
+  color:black;
+}
+
+.form--button--contact {
+  background: black;
+  color: white;
+}
+
+.form--button--contact:hover {
+  background: white;
+  border: solid 1px black;
+}
+
+.contact--imput {
+  border: solid 1px black ;
+
 }

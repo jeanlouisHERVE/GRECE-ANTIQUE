@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use App\Utils\Database;
 use PDO;
 
@@ -10,13 +11,17 @@ class ArticleController extends CoreController
 {
     public function list()
     {
-        $this->show('article/articleList');
+
+       
+        
     }
    
 
     public function category()
     {
-        $this->show('article/categoryarticle');
+        $Categories = Category::findAll();
+
+        $this->show('article/categoryarticle', ['categories' => $Categories,]);
     }
 
 
