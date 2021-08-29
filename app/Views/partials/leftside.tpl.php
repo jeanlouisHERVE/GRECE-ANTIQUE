@@ -1,4 +1,5 @@
-<aside class="left col-2 list--article--left">
+<aside class="left col-2 list--article--left" >
+        <p class="align-self-center">menu articles </p>
         <ul class="nav collapse--menu--left-side ">
                     <li class="nav-item">
                         <a class="nav-link contenu--item" href="<?= $router->generate('article-list') ?>">

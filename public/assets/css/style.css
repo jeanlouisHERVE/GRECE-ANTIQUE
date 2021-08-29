@@ -345,3 +345,42 @@ body {
 .contact--imput {
   border: solid 1px black ;
 }
+
+/* ------------------ */
+/* --CATEGORIE LIST-- */
+/* ------------------ */
+
+.list--article--right {
+  padding: 0px;
+
+}
+
+
+.under--navbar--picture {
+  background: url('../img/archaeology-4881001.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  
+}
+
+
+.categorie--list--container{
+  display: flex;
+  justify-content: center;
+
+}
+
+.category--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: 'Lexend', sans-serif; 
+  color:black;
+  border-radius: 50px;
+}
+
+
+
+

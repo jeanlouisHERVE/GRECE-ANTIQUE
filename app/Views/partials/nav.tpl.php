@@ -2,7 +2,7 @@
     <div class="container navbar--container d-flex justify-content-between align-items-center col-12" ;>
         <div class="narbar-logo d-flex justify-content-center">
             <a class="navbar--mainlogo logo" href="#">
-                <img class="bg-primary" src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top" alt="">
+                <img src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top" alt="">
                 <a class="navbar--maintitle ml-3" href="<?= $router->generate('main-home') ?>">grece antique</a>
             </a>
         </div>
@@ -20,7 +20,7 @@
                     </a>
 
                 <li class="nav-item">
-                    <a class="nav-link nav-link-navbar " href="<?= $router->generate('contact')?>">
+                    <a class="nav-link nav-link-navbar " href="<?= $router->generate('contact') ?>">
                         Contact
                     </a>
                 </li>
@@ -31,38 +31,38 @@
                 </div>
             </ul>
         </div>
-        
+
     </div>
 
-    <div class=" contenu d-none justify-content-between align-items.center col-12">
-                <div class="vide"></div>
-                <ul class="nav collapse--menu">
-                    <li class="nav-item">
-                        <a class="nav-link contenu--item" href="<?= $router->generate('article-list') ?>">
-                            Liste complète
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contenu--item " href="<?= $router->generate('article-categories') ?>">
-                            Liste par catégorie
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link contenu--item" href="<?= $router->generate('article-views') ?>">
-                            Les plus vus
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contenu--item" href="<?= $router->generate('article-rates') ?>">
-                            Les mieux notés
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link contenu--item" href="<?= $router->generate('article-alphabetical') ?>">
-                            Par ordre alphabétique
-                        </a>
-                    </li>
+    <div class=" contenu d-none justify-content-between align-items-center col-12">
+        <div class="vide"></div>
+        <ul class="nav collapse--menu">
+            <li class="nav-item">
+                <a class="nav-link contenu--item" href="<?= $router->generate('article-list') ?>">
+                    Liste complète
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contenu--item " href="<?= $router->generate('article-categories') ?>">
+                    Liste par catégorie
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link contenu--item" href="<?= $router->generate('article-views') ?>">
+                    Les plus vus
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contenu--item" href="<?= $router->generate('article-rates') ?>">
+                    Les mieux notés
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link contenu--item" href="<?= $router->generate('article-alphabetical') ?>">
+                    Par ordre alphabétique
+                </a>
+            </li>
 
-                </ul>
-            </div>
+        </ul>
+    </div>
 </nav>
