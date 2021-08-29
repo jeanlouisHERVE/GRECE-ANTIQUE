@@ -2,7 +2,7 @@
     <div class="container navbar--container d-flex justify-content-between align-items-center col-12" ;>
         <div class="narbar-logo d-flex justify-content-center">
             <a class="navbar--mainlogo logo" href="#">
-                <img src="" alt="" width="auto" height="100%" class="d-inline-block align-text-top" alt="">
+                <img class="bg-primary" src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top" alt="">
                 <a class="navbar--maintitle ml-3" href="<?= $router->generate('main-home') ?>">grece antique</a>
             </a>
         </div>

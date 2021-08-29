@@ -11,18 +11,18 @@
 .navbar {
   height: 60px;
   background-color:white;
-
+  padding: 0px;
  }
 
 .navbar--container {
-  height: 100%;
+  margin: 0px;
   background-color:white;
 }
 
-.jumbotron {
-  background-image: url("../img/epidaure.jpg");
-  background-size: cover;
-  background-position: center;
+.narbar-logo {
+  display: flex;
+  align-items: center;
+
 }
 
 .navbar--maintitle {
@@ -31,6 +31,11 @@
   font-size: x-large ; 
   color:black;
 
+}
+
+.navbar--maintitle:hover{
+  text-decoration: none;
+  color: black;
 }
 
 .dropdown-menu {
@@ -98,6 +103,14 @@
 body {
   background-color:purple;
   margin-top: 60px;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-image: url("../img/epidaure.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /* HEADER */

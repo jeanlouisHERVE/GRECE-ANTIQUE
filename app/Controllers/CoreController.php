@@ -33,6 +33,8 @@ abstract class CoreController
 
         $viewData['baseUri'] = $_SERVER['BASE_URI'];
 
+        $absoluteUrl =  $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['BASE_URI'] . '/';
+
         extract($viewData);
       
         require_once __DIR__.'/../Views/layout/header.tpl.php';

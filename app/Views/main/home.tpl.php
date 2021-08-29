@@ -19,8 +19,7 @@
         <div class="jumbotron jumbotron-fluid mt-4 d-flex flex-column justify-content-center col-12 ">
             <div class="container" >
                 <div class="fond">
-                    <h1 class="jumbotron--homeTitle display-4">Bienvenue</h1>
-                    <p class="jumbotron--subTitle">La Grèce Antique accessible à tous</p>
+                
                 </div>
             </div>
         </div>
