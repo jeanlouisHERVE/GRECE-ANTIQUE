@@ -25,10 +25,12 @@
                     Liste des categories
                 </h1>
             <div class="categorie--list--container col-12">   
-                <div class="category--list col-8">
+                <div class="category--list col-8 bg-primary">
                     <?php foreach($categories as $categorie): ?>
-                        
-                        <a href="<?= $router->generate('articleByCategory', ['id' => $categorie->getId()]) ?>" class="btn btn-sm btn-warning"><h2><?= $categorie->getName()?></h2></a>
+                        <a href="<?= $router->generate('articleByCategory', ['id' => $categorie->getId()]) ?>" class="btn btn-sm col-12 d-flex">
+                            <h2><?= $categorie->getName()?></h2>
+                            <i class="fas fa-arrow-circle-right"></i>
+                        </a>            
                     <?php endforeach; ?>
                 </div>
             </div> 
