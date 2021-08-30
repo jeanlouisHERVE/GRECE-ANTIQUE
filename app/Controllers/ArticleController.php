@@ -45,6 +45,7 @@ class ArticleController extends CoreController
 
     public function alphabetical()
     {
-        $this->show('article/alphabeticalorderarticle');
+        $alphabeticalOrder = Article::findAlphabetical();
+        $this->show('article/alphabeticalorderarticle',['alphabeticalOrder' => $alphabeticalOrder,]);
     }
 }

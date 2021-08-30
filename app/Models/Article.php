@@ -75,7 +75,18 @@ class Article extends CoreModel
         return $ArticleByCategory;
     }
 
-    
+    public static function findAlphabetical()
+    {
+        $pdo = Database::getPDO();
+        $sql = 'SELECT * 
+                FROM `article`
+                ORDER BY `title` asc';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute();
+        $orderArticlesByAlphabetical = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        
+        return $orderArticlesByAlphabetical;
+    }
     
 
     /**
@@ -218,6 +229,27 @@ class Article extends CoreModel
 
         return $this;
     }
+
+      /**
+     * Get the value of Author
+     */ 
+    public function getAuthor_id()
+    {
+        return $this->author_id;
+    }
+
+    /**
+     * Set the value of category_id
+     *
+     * @return  self
+     */ 
+    public function setAuthor_id($author_id)
+    {
+        $this->author_id = $author_id;
+
+        return $this;
+    }
+
 
     public function insert() {
 
