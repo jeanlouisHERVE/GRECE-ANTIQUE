@@ -34,6 +34,12 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/style.css" />
+
+
+    <!-- javascript -->
+    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/app.js"></script>
+    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/navbar.js"></script>
+    
 </head>
 
 <!-- ************************navbar************************ -->
