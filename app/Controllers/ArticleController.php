@@ -24,13 +24,22 @@ class ArticleController extends CoreController
         $this->show('article/article',['articleDetails' => $articleDetails,]);
     }
 
-   
-
     public function categories()
     {
-        $Categories = Category::findAll();
+        $categories = Category::findAll();
 
-        $this->show('category/categoryList', ['categories' => $Categories,]);
+        $this->show('category/categoryList', ['categories' => $categories,]);
+    }
+
+    public function articlesByCategory($params)
+    {
+        $categoryId = $params['id'];
+
+        
+        $details = new Article($params);
+        $articleByCategory = $details->findArticlesByCategory($categoryId);
+        
+        $this->show('category/articlesbycategory', ['articlesByCategory' => $articleByCategory,]);
     }
     
     public function view()

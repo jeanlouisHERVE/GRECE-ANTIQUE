@@ -19,11 +19,12 @@ class Article extends CoreModel
     public static function find($id)
     {
 
-        $sql = '
-            SELECT * FROM `article` 
+        $sql = 
+           'SELECT * 
+            FROM `article` 
             INNER JOIN `category` ON article.category_id = category.id 
             INNER JOIN `author` ON article.author_id = author.id
-            WHERE article.id = :id'
+            WHERE article.id = :id';
         ;
 
         $pdo = Database::getPDO();
@@ -61,13 +62,14 @@ class Article extends CoreModel
         return $titleList;
     }
 
-    public static function findByCategory($CategoryId)
+    public static function findArticlesByCategory($CategoryId): array
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT *  
+        $sql = 'SELECT * ,
+                category.id AS category_Id
                 FROM `article`
                 INNER JOIN `category` ON article.category_id = category.id
-                WHERE category.id = :id';
+                WHERE category_Id = :id';
         $pdoStatement = $pdo->prepare($sql);
         $pdoStatement->execute([':id' => $CategoryId]);
         $ArticleByCategory = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 

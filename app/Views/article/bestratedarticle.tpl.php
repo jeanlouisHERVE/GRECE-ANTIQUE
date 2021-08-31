@@ -11,6 +11,7 @@
 
     <div class="container main--container col-12">
 
+    <div class="under--navbar--picture col-12"></div>
       
         <!-- ************************welcome message************************ -->
         <div class="row " >

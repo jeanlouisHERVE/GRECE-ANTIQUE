@@ -241,21 +241,28 @@ body {
   padding-bottom: 10px;
 }
 
-/* ---------------- */
-/* LISTE D'ARTICLES */
-/* ---------------- */
-
-/* MENU DES ARTICLES */
+/* ---------------------------- */
+/*  ASIDE LEFT LISTE D'ARTICLES */
+/* ---------------------------- */
 
 .collapse--menu--left-side {
   display: flex;
   flex-direction: column;
-
 }
 
+.list--article--left h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+  margin-left: 20px;
+  background-color: chartreuse;
+  text-align: center;
+}
 
+.collapse--menu--left-side .nav-item {
+  margin-left: auto;
+  margin-right: auto;
 
-/* LISTE DES ARTICLES */
+}
 
 .list--article--left {
   background-color:teal;
@@ -263,11 +270,62 @@ body {
   padding-top: 30px;
 }
 
+v
+
+
+
+/* ---------------- */
+/* LISTE D'ARTICLES */
+/* ---------------- */
+
+/* MENU DES ARTICLES */
+
+
+
+
+
+/* LISTE DES ARTICLES */
+
+aside .list--article--right {
+  background-color: white;
+
+}
+
+.list--article--right {
+  background-color: white;
+  padding-left: 20px;
+}
+
 .list--article--right h1 {
-  padding: 30px;
+  text-decoration: none;
   font-family: 'Bebas Neue', cursive;
   font-size: xx-large;
   color:black;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+.list--article--right h2 {
+  font-family: 'Lexend', sans-serif; 
+  font-size: x-large;
+  margin-left: 40px;
+}
+
+.list--article--righ--div {
+  padding: 0px;
+}
+
+.list--article--righ--a {
+  margin-left: 30px;
+  color:black;
+  width: 100%;
+  margin: 0px;
+}
+
+.list--article--righ--a:hover {
+  text-decoration: none;
+  margin: 0px;
+  
 }
 
 
@@ -280,13 +338,10 @@ body {
   
 }
 
-
-
 .left--contact {
   height: 100vh;
   padding: 0px;
 
-  
 }
 
 .left--contact--picture {
@@ -297,7 +352,6 @@ body {
   width: auto;
   margin-left: 0px;
 }
-
 
 .right--contact {
   height: 100vh;
@@ -367,7 +421,9 @@ body {
 
 .categorie--list--container{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -381,6 +437,15 @@ body {
   border-radius: 50px;
 }
 
+.category--list--unity {
+  display: flex;
+  flex-direction: row;
+  background-color: chartreuse;
+}
 
-
+.category--list--arrow {
+  
+  background-color: blueviolet;
+  align-self: center;
+}
 
