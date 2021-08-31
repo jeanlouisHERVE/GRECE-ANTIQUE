@@ -1,19 +1,20 @@
 const navbar = {
-    init: function(){
+    init: function()
+    {
+
+        console.log("navbar Init !");
 
         const title = document.querySelector('.nav-link--article');
    
-        title.addEventListener('click', app.handleFormSubmit);
+        title.addEventListener('click', navbar.handleFormSubmit);
     },
 
     handleFormSubmit: function(evt) {
-    
+        
    
         evt.preventDefault();
     
         const parent = document.querySelector('.navbar--container');
-    
-        
     
         const contenu = document.querySelector('.contenu');
     
