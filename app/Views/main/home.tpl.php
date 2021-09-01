@@ -46,10 +46,10 @@
             <?php foreach ($threeBestRatedArticle as $bestarticles ) : ?>
                 <div class="card col-3">
                     <img src="./assets/img/delphi-1919203.jpg" class="card-img-top mt-3" alt="...">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card--title"><?= $bestarticles->getTitle()?></h5>
-                        <p class="card--text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="<?= $router->generate('articleById', ['id' => $bestarticles->getId()]) ?>" class="btn btn-primary card--link">Consulter l'article</a>
+                    <div class="home--card--body d-flex flex-column">
+                        <h5 class="home--card--title"><?= $bestarticles->getTitle()?></h5>
+                        <p class="home--card--text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="<?= $router->generate('articleById', ['id' => $bestarticles->getId()]) ?>" class="btn btn-outline-primary home--card--link">Consulter l'article</a>
                     </div>
                 </div>
             <?php endforeach; ?>

@@ -15,11 +15,9 @@ class ArticleController extends CoreController
         $this->show('article/articleList',['titleList' => $titleList,]);
     }
 
-    public function detailArticle($params)
+    public function detailArticle($id)
     {
-        $articleId = $params['id'];
-        $details = new Article();
-        $articleDetails = $details->find($articleId);
+        $articleDetails = Article::find($id);
 
         $this->show('article/article',['articleDetails' => $articleDetails,]);
     }
@@ -31,13 +29,9 @@ class ArticleController extends CoreController
         $this->show('category/categoryList', ['categories' => $categories,]);
     }
 
-    public function articlesByCategory($params)
+    public function articlesByCategory($categoryId)
     {
-        $categoryId = $params['id'];
-
-        
-        $details = new Article($params);
-        $articleByCategory = $details->findArticlesByCategory($categoryId);
+        $articleByCategory = Article::findArticlesByCategory($categoryId);
         
         $this->show('category/articlesbycategory', ['articlesByCategory' => $articleByCategory,]);
     }
@@ -49,7 +43,8 @@ class ArticleController extends CoreController
 
     public function rate()
     {
-        $this->show('article/bestratedarticle');
+        $bestRatedArticles = Article::findBestRatedArticle();
+        $this->show('article/bestratedarticle',['bestRatedArticle' => $bestRatedArticles,]);
     }
 
     public function alphabetical()

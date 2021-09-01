@@ -46,7 +46,7 @@
   align-self: center;
 }
 
-.navbar--maintitle:hover{
+.navbar--maintitle--link:hover{
   text-decoration: none;
   color: black;
   
@@ -194,6 +194,11 @@ body {
   opacity: 0.7;
 }
 
+.welcome--picture:hover {
+  width: 100%;
+  opacity: 1;
+}
+
 .welcome--button {
   margin-top: 50px;
   width: 50%;
@@ -216,6 +221,7 @@ body {
 
 
 /* FAVORITE ARTICLES */
+
 .favorite-articles {
   background: #7bc9fe; 
   padding-top: 30px;
@@ -225,9 +231,17 @@ body {
   margin-left: 0px;
 }
 
-.card--link{
-  align-self: center;
+.home--card--title {
+  margin-top: 10px;
+
 }
+
+.home--card--link{
+  align-self: center;
+  margin-bottom: 15px;
+ 
+}
+
 
 
 /* FOOTER */
@@ -455,12 +469,61 @@ aside .list--article--right {
 .category--list--unity {
   display: flex;
   flex-direction: row;
-  background-color: chartreuse;
+  
+  justify-content: space-between;
+  padding: 10px;
+  border: solid black 5px;
+  margin-top: 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+
+}
+
+.category--list--unity:hover {
+  background-color: #7bc9fe;
+  
+
 }
 
 .category--list--arrow {
-  
-  background-color: blueviolet;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  
 }
+
+.category--list--arrow i {
+  font-size: 40px;
+  color: black;
+}
+
+
+/* ------------------ */
+/* --PAGE ARTICLE---- */
+/* ------------------ */
+
+.main--container .articlePage {
+ 
+}
+
+
+.article--container {
+  margin-top: -80px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  border : solid 1px black;
+  padding :30px 40px
+}
+
+.article--main--title {
+  margin-top: 0px;
+  padding-top: 40px;
+
+}
+
+
+
 

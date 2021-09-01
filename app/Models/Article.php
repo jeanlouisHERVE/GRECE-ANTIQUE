@@ -10,9 +10,6 @@ class Article extends CoreModel
     private $title;
     private $resume;
     private $content;
-    private $content2;
-    private $content3;
-    private $content4;
     private $category_id;
     private $author_id;
     private $rate;
@@ -63,7 +60,7 @@ class Article extends CoreModel
         return $titleList;
     }
 
-    public static function findArticlesByCategory($CategoryId): array
+    public static function findArticlesByCategory($categoryId)
     {
         $pdo = Database::getPDO();
         $sql = 'SELECT * ,
@@ -72,10 +69,10 @@ class Article extends CoreModel
                 INNER JOIN `category` ON article.category_id = category.id
                 WHERE category_Id = :id';
         $pdoStatement = $pdo->prepare($sql);
-        $pdoStatement->execute([':id' => $CategoryId]);
-        $ArticleByCategory = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        $pdoStatement->execute([':id' => $categoryId]);
+        $articleByCategory = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
         
-        return $ArticleByCategory;
+        return $articleByCategory;
     }
 
     public static function findAlphabetical()
@@ -175,66 +172,6 @@ class Article extends CoreModel
     {
         $this->content = $content;
 
-        return $this;
-    }
-
-        /**
-     * Get the value of content
-     */ 
-    public function getContent2()
-    {
-        return $this->content2;
-    }
-
-    /**
-     * Set the value of content
-     *
-     * @return  self
-     */ 
-    public function setContent2($content2)
-    {
-        $this->content2 = $content2;
-
-        return $this;
-    }
-
-       /**
-     * Get the value of content
-     */ 
-    public function getContent3()
-    {
-        return $this->content3;
-    }
-
-    /**
-     * Set the value of content
-     *
-     * @return  self
-     */ 
-    public function setContent3($content3)
-    {
-        $this->content3 = $content3;
-
-        return $this;
-    }
-
-       /**
-     * Get the value of content
-     */ 
-    public function getContent4()
-    {
-        return $this->content4;
-    }
-
-    /**
-     * Set the value of content
-     *
-     * @return  self
-     */ 
-    public function setContent4($content4)
-    {
-        $this->content4 = $content4;
-        
         return $this;
     }
 

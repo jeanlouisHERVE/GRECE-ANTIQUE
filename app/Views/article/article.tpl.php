@@ -9,40 +9,26 @@
 
     <!-- ************************container************************ -->
 
-    <div class="container main--container col-12">
+    <div class="container main--container articlePage article col-12">
 
     <div class="under--navbar--picture col-12"></div>
     
         <!-- ************************welcome message************************ -->
-        <div class="row ">
-            <?php
-            include __DIR__ . '/../partials/leftside.tpl.php';
-            ?>
-            <aside class="left col-10 list--article--right">
-                <h1 class="list--article--main--title">
-                    Article n°
+       
+            <div class="col-6 article--container bg-primary">
+                <h1 class="article--main--title">
+                    <?= $articleDetails->getTitle() ?>
                 </h1>
-
-
-                
-
-                <?php foreach ($articleDetails as $articleDetail) : ?>
-                    <h2><?= $articleDetail->getTitle() ?></h2>
                     <tr>
-                        <th scope="row"><?= $articleDetail->getId() ?></th>
-                        <td><?= $articleDetail->getResume() ?></td>
-                        <td><?= $articleDetail->getContent() ?></td>
-                        <td><?= $articleDetail->getContent2() ?></td>
-                        <td><?= $articleDetail->getContent3() ?></td>
-                        <td><?= $articleDetail->getContent4() ?></td>
-                        <td><?= $articleDetail->getCategory_Id() ?></td>
-                        <td><?= $articleDetail->getCreated_at() ?></td>
-                        <td><?= $articleDetail->getUpdated_at() ?></td>
-                        <td><?= $articleDetail->getTypeId() ?></td>
+                        <td class="article--content"><?= $articleDetails->getContent() ?></td>
+                        <td class="article--categoryId"><?= $articleDetails->getCategory_Id() ?></td>
+                        <td class="article--createdAt"><?= $articleDetails->getCreatedAt() ?></td>
+                        <!-- <td class="article--updatedAt">><?= $articleDetails->getUpdatedAt() ?></td> -->
                     </tr>
-                <?php endforeach; ?>
+
+            </div>
+             
 
 
 
 
-            </aside>

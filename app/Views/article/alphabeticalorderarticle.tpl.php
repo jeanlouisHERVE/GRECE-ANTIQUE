@@ -26,10 +26,7 @@
                 <div class="alphabetical--order--container col-12">
                     <div class="alphabetical--order col-8">
                         <?php foreach ($alphabeticalOrder as $alphabeticalOrder) : ?>
-
-                            <a href="<?= $router->generate('articleById', ['id' => $alphabeticalOrder->getId()]) ?>" class="btn btn-sm btn-warning">
-                                <h2><?= $alphabeticalOrder->getTitle() ?></h2>
-                            </a>
+                            <a class="list--article--righ--a" href="<?= $router->generate('articleById', ['id' => $alphabeticalOrder->getId()]) ?>"><h2><?= $alphabeticalOrder->getTitle()?></h2></a>
                         <?php endforeach; ?>
                     </div>
                 </div>
