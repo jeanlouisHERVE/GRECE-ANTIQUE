@@ -8,17 +8,28 @@ const home = {
     cardTextLength: function() {
         
         
-        const cardText = document.querySelectorAll('.home--card--text')
+        const cardText = document.querySelector('.home--card--text')
         
-        const result = []
+        const result = "";
+        
+        const content = cardText.textContent
 
-        for (let i = 0 ; i < cardText.lenght ; i++){
-        
-        result.push(cardText[i].textContent);
+        const addContent = result.push(content);
+
+        if (addContent.length > 80) { 
+
+            addContent.substring(0,79)
+
+        } 
+
+        cardText.textContent = result
+
+
+
         console.log(result)
-        }
 
-        return result;
-        
     }
+
+       
+        
 }
