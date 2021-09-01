@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Controllers;
-
+use App\Models\Article;
 
 
 class MainController extends CoreController
@@ -13,10 +13,13 @@ class MainController extends CoreController
      */
     public function home()
     {
-       
-        $this->show('main/home', [
-           
+        
+        $threeBestRatedArticle = Article::findThreeBestRatedArticle();
+        $this->show('main/home',['threeBestRatedArticle' => $threeBestRatedArticle,
+        
         ]);
+                   
+        
     }
 
     public function contact()

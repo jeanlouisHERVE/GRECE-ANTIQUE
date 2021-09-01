@@ -15,6 +15,7 @@ class Article extends CoreModel
     private $content4;
     private $category_id;
     private $author_id;
+    private $rate;
 
     public static function find($id)
     {
@@ -90,6 +91,32 @@ class Article extends CoreModel
         return $orderArticlesByAlphabetical;
     }
     
+    public static function findThreeBestRatedArticle()
+    {
+        $pdo = Database::getPDO();
+        $sql = 'SELECT * 
+                FROM `article`
+                ORDER BY `rate` desc
+                LIMIT 3';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute();
+        $orderThreeBestRatedArticle = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        
+        return $orderThreeBestRatedArticle;
+    }
+    
+    public static function findBestRatedArticle()
+    {
+        $pdo = Database::getPDO();
+        $sql = 'SELECT * 
+                FROM `article`
+                ORDER BY `rate` desc';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute();
+        $orderBestRatedArticle = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        
+        return $orderBestRatedArticle;
+    }
 
     /**
      * Get the value of title
@@ -252,6 +279,26 @@ class Article extends CoreModel
         return $this;
     }
 
+          /**
+     * Get the value of rate
+     */ 
+    public function getRate()
+    {
+        return $this->rate;
+    }
+
+    /**
+     * Set the value of carate
+     *
+     * @return  self
+     */ 
+
+    public function setRate($rate)
+    {
+        $this->rate = $rate;
+
+        return $this;
+    }
 
     public function insert() {
 

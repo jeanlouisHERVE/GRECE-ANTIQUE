@@ -25,17 +25,32 @@
 
 }
 
-.navbar--maintitle {
+ .vieux {
+  transform: scaleX(-1);
+  
+}
+
+
+
+.navbar--maintitle--div {
+  margin-right: 20px;
+ 
+}
+
+
+.navbar--maintitle--link {
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
   font-size: x-large ; 
   color:black;
-
+  align-self: center;
 }
 
 .navbar--maintitle:hover{
   text-decoration: none;
   color: black;
+  
+
 }
 
 .dropdown-menu {

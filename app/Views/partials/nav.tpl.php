@@ -2,8 +2,11 @@
     <div class="container navbar--container d-flex justify-content-between align-items-center col-12" ;>
         <div class="narbar-logo d-flex justify-content-center">
             <a class="navbar--mainlogo logo" href="#">
-                <img src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top" alt="">
-                <a class="navbar--maintitle ml-3" href="<?= $router->generate('main-home') ?>">grece antique</a>
+                <img src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top achille" alt="">
+                <div class="navbar--maintitle--div">
+                <a class="navbar--maintitle--link ml-3" href="<?= $router->generate('main-home') ?>">grece antique</a>
+                </div>
+                <img src="<?= $absoluteUrl ?>assets/img/vieuxcarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top vieux" alt="">
             </a>
         </div>
         <div class="navbar--menu d-flex justify-content-center align-items-center pt-0 ">
