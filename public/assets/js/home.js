@@ -8,28 +8,26 @@ const home = {
     cardTextLength: function() {
         
         
-        const cardText = document.querySelector('.home--card--text')
+        const cardText = document.querySelectorAll('.home--card--text')
+        let content = ""
+        let result = "";
+        let final = "";
         
-        const result = "";
-        
-        const content = cardText.textContent
+        for ( let i = 0 ; i < cardText.length ; i++){
+            
+            
+            content = cardText[i].textContent;
 
-        const addContent = result.push(content);
+            console.log(content)
+           
+            if (content.length > 80) {  
+            result = content.substring(0,60)
+            final = result + '...'    
+            }
 
-        if (addContent.length > 80) { 
+            cardText[i].textContent = final;
+        }     
 
-            addContent.substring(0,79)
-
-        } 
-
-        cardText.textContent = result
-
-
-
-        console.log(result)
-
-    }
-
-       
+    }       
         
 }

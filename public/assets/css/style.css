@@ -469,7 +469,6 @@ aside .list--article--right {
 .category--list--unity {
   display: flex;
   flex-direction: row;
-  
   justify-content: space-between;
   padding: 10px;
   border: solid black 5px;
@@ -504,26 +503,47 @@ aside .list--article--right {
 /* --PAGE ARTICLE---- */
 /* ------------------ */
 
-.main--container .articlePage {
- 
-}
-
 
 .article--container {
+  background-color: white;
   margin-top: -80px;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
   border : solid 1px black;
-  padding :30px 40px
+  padding :30px 40px;
+  font-family: 'Lexend', sans-serif; 
+  color:black;
 }
 
-.article--main--title {
+.article--container h1 {
   margin-top: 0px;
   padding-top: 40px;
+  font-weight: 800;
 
 }
 
+.article--container h2{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  
+}
 
+.article--container h3 {
+  margin-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  
+}
+.article--container h4 {
+  margin-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-
+.article--container p {
+  text-align: justify;
+  font-size: medium;
+}

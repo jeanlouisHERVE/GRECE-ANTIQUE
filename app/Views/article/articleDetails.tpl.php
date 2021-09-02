@@ -15,7 +15,7 @@
     
         <!-- ************************welcome message************************ -->
        
-            <div class="col-6 article--container bg-primary">
+            <div class="col-8 article--container">
                 <h1 class="article--main--title">
                     <?= $articleDetails->getTitle() ?>
                 </h1>
