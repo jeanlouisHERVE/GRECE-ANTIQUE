@@ -26,10 +26,10 @@
                 </h1>
             <div class="categorie--list--container col-12 ">   
                     <?php foreach($categories as $category): ?>
-                        <div class="category--list--unity col-8 ">
+                        <div class="category--list--unity category--list--background--picture-- col-8 ">
                            <div class="category--list--link">
                                 <a href="<?= $router->generate('articlesByCategory', ['id' => $category->getId()]) ?>" class=" btn col-12 d-flex">
-                                    <h2><?= $category->getName()?></h2>  
+                                    <h2 class="category--list--h2"><?= $category->getName()?></h2>  
                                 </a>
                             </div>
                             <div class="category--list--arrow">

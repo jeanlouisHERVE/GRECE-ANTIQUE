@@ -464,6 +464,7 @@ aside .list--article--right {
   font-family: 'Lexend', sans-serif; 
   color:black;
   border-radius: 50px;
+  
 }
 
 .category--list--unity {
@@ -475,7 +476,9 @@ aside .list--article--right {
   margin-top: 10px;
   border-radius: 50px;
   text-transform: uppercase;
-
+  background: url('../img/epidaure.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .category--list--unity:hover {
