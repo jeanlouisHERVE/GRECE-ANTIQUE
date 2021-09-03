@@ -20,37 +20,37 @@ const categoryList = {
             contentText = h2Category[i].textContent
             console.log(contentText)
 
-            if (h2Category[i].textContent == 'histoire') {
+            if (h2Category[i].textContent === 'histoire') {
 
-                result = divCategory[i].classList.add('history')
+                result = h2Category[i].parentNode.parentNode.parentNode.classList.add('history')
 
             } else if (h2Category[i].textContent == 'mythologie') {
 
-                h2Category[i].classList.add('mythology')
+                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('mythology')
 
             } else if (h2Category[i].textContent == 'philosophie') {
 
-                h2Category[i].classList.add('philosophy')
+                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('philosophy')
 
             } else if (h2Category[i].textContent == 'geographie') {
 
-                h2Category[i].classList.add('geography') 
+                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('geography') 
 
             } else if (h2Category[i].textContent == 'politique') {
 
-                h2Category[i].classList.add('politics')
+                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('politics')
 
-            } else if (h2Category[i].textContent == 'litterature') {
+            } else if (h2Category[i].textContent == 'littérature') {
 
-                h2Category[i].classList.add('litterature')
+                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('litterature')
 
             } else if (h2Category[i].textContent == 'documents') {
 
-                h2Category[i].classList.add('documents') 
+                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('documents') 
             
             } else {
 
-                h2Category[i].classList.add('noCategoryClass')
+                result =h2Category[i].classList.add('noCategoryClass')
             }
 
             console.log(h2Category[i].textContent)

@@ -3,6 +3,8 @@
 namespace App\Models;
 
 use App\Utils\Database;
+use App\Models\Category;
+use App\Models\Author;
 use PDO;
 
 class Article extends CoreModel
@@ -13,6 +15,7 @@ class Article extends CoreModel
     private $category_id;
     private $author_id;
     private $rate;
+ 
 
     public static function find($id)
     {
@@ -120,6 +123,7 @@ class Article extends CoreModel
      */ 
     public function getTitle()
     {
+
         return $this->title;
     }
 
@@ -248,4 +252,27 @@ class Article extends CoreModel
     public function delete() {
 
     }
+
+    /**
+     * Get the value of getCategory
+     */ 
+    public function getCategory()
+    {
+        $category = Category::find($this->getCategory_id());
+        
+        return $category;
+    }
+
+
+    /**
+     * Get the value of getAuthor
+     */ 
+    public function getAuthor()
+    {
+        $author = Author::find($this->getAuthor_id());
+        
+        return $author;
+    }
+
+
 }

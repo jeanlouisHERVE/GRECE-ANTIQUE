@@ -502,6 +502,50 @@ aside .list--article--right {
 }
 
 
+.history {
+  background: url('../img/athens-3411147.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.mythology {
+  background: url('../img/epidaure.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.geography {
+  background: url('../img/epidaure.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.politics {
+  background: url('../img/delphi-1919203.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.litterature {
+  background: url('../img/epidaure.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+.documents {
+  background: url('../img/epidaure.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+
 /* ------------------ */
 /* --PAGE ARTICLE---- */
 /* ------------------ */

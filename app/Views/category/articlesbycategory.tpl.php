@@ -30,6 +30,7 @@
                                 <h2><?= $articleByCategory->getTitle()?></h2>  
                             </a>      
                         </div>    
+                        <?php dump($articleByCategory); ?>
                     <?php endforeach; ?>
 
             </div>

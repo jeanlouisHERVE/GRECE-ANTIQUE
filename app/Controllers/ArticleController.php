@@ -12,7 +12,7 @@ class ArticleController extends CoreController
     public function list()
     {
         $titleList = Article::titleList();
-        $this->show('article/articleList',['titleList' => $titleList,]);
+        $this->show('article/articleList',['titleList' => $titleList, ]);
     }
 
     public function detailArticle($id)
