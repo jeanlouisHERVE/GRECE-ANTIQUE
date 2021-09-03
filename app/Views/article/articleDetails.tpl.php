@@ -19,7 +19,7 @@
                 
                 <div class="article--entete">
                     <div class="article--above--title">
-                        <div class="article--category"><a href="#" class="badge badge-info">Catégory</a></div>
+                        <div class="article--category"><a href="#" class="badge badge-info">categorie</a></div>
                         <h1 class="article--main--title"><?= $articleDetails->getTitle() ?></h1>
                     </div>
                     <div class="article--under--title">

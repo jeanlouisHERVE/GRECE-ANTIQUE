@@ -9,12 +9,14 @@ use PDO;
 
 class Article extends CoreModel
 {
+    private $number;
     private $title;
     private $resume;
     private $content;
     private $category_id;
     private $author_id;
     private $rate;
+    
  
 
     public static function find($id)
@@ -241,6 +243,26 @@ class Article extends CoreModel
         return $this;
     }
 
+     /**
+     * Get the value of number
+     */ 
+    public function getNumber()
+    {
+        return $this->number;
+    }
+
+    /**
+     * Set the value of number
+     *
+     * @return  self
+     */ 
+    public function setNumber($number)
+    {
+        $this->number = $number;
+
+        return $this;
+    }
+    
     public function insert() {
 
     }
@@ -275,4 +297,6 @@ class Article extends CoreModel
     }
 
 
+
+   
 }
