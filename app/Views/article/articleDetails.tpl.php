@@ -18,21 +18,24 @@
             <div class="col-8 article--container">
                 
                 <div class="article--entete">
-                <h1 class="article--main--title">
-                    <?= $articleDetails->getTitle() ?>
-                </h1>
-                <div class="row">
-                    <p class="article--authorId"><?= $articleDetails->getAuthor_Id() ?></p>
-                    <p class="article--createdAt"><?= $articleDetails->getCreatedAt() ?></p>
-                    <p class="article--author"><?= $articleDetails->getAuthor()->getFirstname() ?></p>
+                    <div class="article--above--title">
+                        <div class="article--category"><a href="#" class="badge badge-info">Catégory</a></div>
+                        <h1 class="article--main--title"><?= $articleDetails->getTitle() ?></h1>
+                    </div>
+                    <div class="article--under--title">
+                       <p class="article--createdAt">Publié le : <?= $articleDetails->getCreatedAt() ?></p>
+                       <p class="article--author">par <?= $articleDetails->getAuthor()->getFirstname() ?></p>
+                    </div>
+                    
                 </div>
-                </div>
+                <div class="article--main">
                     <tr>
                         <td class="article--content"><?= $articleDetails->getContent() ?></td>
-                        <td class="article--categoryId"><?= $articleDetails->getCategory_Id() ?></td>
-                        <td class="article--createdAt"><?= $articleDetails->getCreatedAt() ?></td>
+                        
                         <!-- <td class="article--updatedAt">><?= $articleDetails->getUpdatedAt() ?></td> -->
                     </tr>
+                </div>
+                    
 
             </div>
              
