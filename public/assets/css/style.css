@@ -116,7 +116,7 @@
 
 /* BODY */
 body {
-  background-color: #7bc9fe;
+  background-color: #caf0f8;
   margin-top: 60px;
 }
 
@@ -554,6 +554,7 @@ aside .list--article--right {
 .article--container {
   background-color: white;
   margin-top: -80px;
+  margin-bottom: 40px;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
