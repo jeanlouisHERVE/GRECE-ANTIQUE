@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Symfony\Component\VarDumper\VarDumper;
+
 // Classe mère de tous les Models
 // On centralise ici toutes les propriétés et méthodes utiles pour TOUS les Models
 
@@ -41,11 +43,17 @@ abstract class CoreModel
         }
     }
 
+    public function newFormatDate($created_at)
+    {
+        var_dump($created_at);
+    }
+
+
     /**
      * Get the value of id
      *
      * @return int|null
-     */ 
+     */
     public function getId() : ?int
     {
         return $this->id;
@@ -55,7 +63,7 @@ abstract class CoreModel
      * Get the value of created_at
      *
      * @return  string
-     */ 
+     */
     public function getCreatedAt() : string
     {
         return $this->created_at;
@@ -65,9 +73,25 @@ abstract class CoreModel
      * Get the value of updated_at
      *
      * @return  string
-     */ 
+     */
     public function getUpdatedAt() : string
     {
         return $this->updated_at;
+    }
+
+
+    /**
+     * Set the value of created_at
+     *
+     * @param  string  $created_at
+     *
+     * @return  self
+     */ 
+    public function setCreated_at($newDate)
+    {
+        $oldDate = Article::$created_at;
+        $newDate = date("m-d-Y", strtotime($oldDate));
+
+        return $this->$newDate;
     }
 }
