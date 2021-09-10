@@ -6,9 +6,8 @@ const app = {
     console.log("App Init !");
     navbar.init();
     home.init();
+    article.init()
     categoryList.init();   
-    task.init()
-     
     
   },
 

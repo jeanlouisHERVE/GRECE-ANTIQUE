@@ -13,7 +13,7 @@ const categoryList = {
 
     pictureCategory: function() {
 
-        const h2Category = document.querySelectorAll('.category--list--h2');
+        const h2Category = document.querySelectorAll('.category--list--name');
         const divCategory = document.querySelector('category--list--unity')
 
         let contentText= "";
@@ -25,31 +25,31 @@ const categoryList = {
 
             if (h2Category[i].textContent === 'histoire') {
 
-                result = h2Category[i].parentNode.parentNode.parentNode.classList.add('history')
+                result = h2Category[i].parentNode.parentNode.classList.add('history')
 
             } else if (h2Category[i].textContent == 'mythologie') {
 
-                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('mythology')
+                result =h2Category[i].parentNode.parentNode.classList.add('mythology')
 
             } else if (h2Category[i].textContent == 'philosophie') {
 
-                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('philosophy')
+                result =h2Category[i].parentNode.parentNode.classList.add('philosophy')
 
             } else if (h2Category[i].textContent == 'geographie') {
 
-                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('geography') 
+                result =h2Category[i].parentNode.parentNode.classList.add('geography') 
 
             } else if (h2Category[i].textContent == 'politique') {
 
-                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('politics')
+                result =h2Category[i].parentNode.parentNode.classList.add('politics')
 
             } else if (h2Category[i].textContent == 'littérature') {
 
-                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('litterature')
+                result =h2Category[i].parentNode.parentNode.classList.add('litterature')
 
             } else if (h2Category[i].textContent == 'documents') {
 
-                result =h2Category[i].parentNode.parentNode.parentNode.classList.add('documents') 
+                result =h2Category[i].parentNode.parentNode.classList.add('documents') 
             
             } else {
 

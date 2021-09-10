@@ -458,9 +458,14 @@ aside .list--article--right {
 .categorie--list--container{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
+}
+
+.categorie--list--container a {
+  display: flex;
+  justify-content: center;
 }
 
 .category--list {
@@ -486,12 +491,6 @@ aside .list--article--right {
   background: url('../img/epidaure.jpg');
   background-size: cover;
   background-position: center;
-}
-
-.category--list--unity:hover {
-  background-color: #7bc9fe;
-  
-
 }
 
 .category--list--arrow {
@@ -579,6 +578,11 @@ aside .list--article--right {
 
 .article--above--title {
   margin-top: 20px;
+}
+
+
+.article--badge {
+  
 }
 
 .article--main--title {
