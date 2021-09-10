@@ -19,11 +19,11 @@
 
             <div class="article--entete">
                 <div class="article--above--title">
-                    <div class="article--category"><a href="#" class="badge badge-info">categorie</a></div>
+                    <div class="article--category"><a href="<?= $router->generate('articlesByCategory', ['id' => $articleDetails->getCategory_Id()]) ?>" class="badge badge-info"><?= $articleDetails->getCategory()->getName() ?></a></div>
                     <h1 class="article--main--title"><?= $articleDetails->getTitle() ?></h1>
                 </div>
                 <div class="article--under--title">
-                    <p class="article--createdAt">Publié le : <?= $articleDetails->getCreatedAt() ?></p>
+                    <p class="article--createdAt">Publié le : <?= $articleDetails->setCreated_at("m-d-Y") ?></p>
                     <p class="article--author">par <?= $articleDetails->getAuthor()->getFirstname() ?></p>
                 </div>
 

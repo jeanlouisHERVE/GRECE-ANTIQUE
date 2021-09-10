@@ -6,11 +6,13 @@ const app = {
     console.log("App Init !");
     navbar.init();
     home.init();
-    categoryList.init();
+    categoryList.init();   
+    task.init()
+     
     
-    
-       
   },
+
+  
 
 }
 

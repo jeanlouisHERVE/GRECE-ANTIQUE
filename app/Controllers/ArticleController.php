@@ -19,7 +19,7 @@ class ArticleController extends CoreController
     {
         $articleDetails = Article::find($id);
 
-        $this->show('article/articleDetails',['articleDetails' => $articleDetails,]);
+        $this->show('article/articleDetails',['articleDetails' => $articleDetails ]);
     }
 
     public function categories()

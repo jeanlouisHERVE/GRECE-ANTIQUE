@@ -17,7 +17,7 @@ class Category extends CoreModel
 
         $sql = '
             SELECT *
-            FROM article
+            FROM category
             WHERE id = :id
         ';
 

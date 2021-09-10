@@ -87,11 +87,11 @@ abstract class CoreModel
      *
      * @return  self
      */ 
-    public function setCreated_at($newDate)
+    public function setCreated_at($format)
     {
-        $oldDate = Article::$created_at;
-        $newDate = date("m-d-Y", strtotime($oldDate));
-
-        return $this->$newDate;
+        $oldDate = $this->created_at;
+        $newDate = date($format, strtotime($oldDate));
+        return $newDate;
     }
+
 }

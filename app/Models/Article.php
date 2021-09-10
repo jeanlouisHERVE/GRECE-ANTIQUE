@@ -25,8 +25,6 @@ class Article extends CoreModel
         $sql = 
            'SELECT * 
             FROM `article` 
-            INNER JOIN `category` ON article.category_id = category.id 
-            INNER JOIN `author` ON article.author_id = author.id
             WHERE article.id = :id';
         ;
 

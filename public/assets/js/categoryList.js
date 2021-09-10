@@ -4,13 +4,17 @@ const categoryList = {
         console.log('categoryList init !')
         categoryList.pictureCategory()
         
+       
+           
     },
+
+    
+
 
     pictureCategory: function() {
 
         const h2Category = document.querySelectorAll('.category--list--h2');
         const divCategory = document.querySelector('category--list--unity')
-        console.log(h2Category)
 
         let contentText= "";
         let result = "";
@@ -18,7 +22,6 @@ const categoryList = {
         for (let i = 0 ; i < h2Category.length ; i++ ) {
 
             contentText = h2Category[i].textContent
-            console.log(contentText)
 
             if (h2Category[i].textContent === 'histoire') {
 
@@ -52,8 +55,6 @@ const categoryList = {
 
                 result =h2Category[i].classList.add('noCategoryClass')
             }
-
-            console.log(h2Category[i].textContent)
 
         }
     
