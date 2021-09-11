@@ -38,6 +38,7 @@
     <!-- javascript -->
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/app.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/navbar.js"></script>
+    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/contactTask.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/articleTask.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/home.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/categoryList.js"></script>

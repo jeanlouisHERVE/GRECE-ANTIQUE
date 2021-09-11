@@ -1,9 +1,10 @@
 const articleTask = {
     init: function()
     {
-        console.log('article init !')
-        // const articleFilters = document.querySelector('.btn-group');
-        // console.log(articleFilters)
+        console.log('articleTask init !')
+        const articleFilters = document.querySelector('.btn-group');
+        console.log(articleFilters)
+        
     },
 
 
@@ -11,4 +12,5 @@ const articleTask = {
 
      
 
+    }
 }

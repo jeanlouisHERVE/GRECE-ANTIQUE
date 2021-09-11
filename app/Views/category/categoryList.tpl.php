@@ -13,15 +13,9 @@
 
         <div class="under--navbar--picture col-12"></div>
 
-        <!-- ************************Left side************************ -->
-        <div class="row ">
-            <?php
-            include __DIR__ . '/../partials/leftside.tpl.php';
-            ?>
-            <!-- ************************right side************************ -->
-            <aside class="right col-10 list--article--right">
+            <div class="right  list--article--right col-12">
 
-                <h1 class="list--article--main--title">
+                <h1 class="list--article--main--title m-0 pt-3 pl-3">
                     Liste des categories
                 </h1>
                 <div class="categorie--list--container col-12 ">
@@ -39,11 +33,7 @@
                         </a>
                     <?php endforeach; ?>
                 </div>
-
-
-
-
-            </aside>
+            </div>
 
 
 
@@ -51,4 +41,4 @@
 
 
 
-        </div>
+        

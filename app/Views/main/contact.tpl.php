@@ -9,7 +9,7 @@
 
   <!-- ************************container************************ -->
 
-  <div class="container main--container--contact col-12 d-flex">
+  <div class="container main--container--contact col-12 p-0 d-flex">
     <aside class="left--contact col-6">
     <div class="left--contact--picture">
 

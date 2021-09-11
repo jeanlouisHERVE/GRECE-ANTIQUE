@@ -10,15 +10,19 @@ const app = {
     if (window.location.href.indexOf('categorie')>-1 === true) {
       categoryList.init();  
     }  
-    if (window.location.href.indexOf('article/list')>-1 === true) {
+   
+    if (window.location.href.indexOf('articlelist')>-1 === true) {
       articleList.init()
       articleTask.init()
-      
     }
-    if (window.location.href.indexOf('article')>-1 === true) {
+
+    if (window.location.href.indexOf('article/')>-1 === true) {
       article.init()
     }
-    
+
+    if (window.location.href.indexOf('contact')>-1 === true) {
+      contactTask.init()
+    }
     
   },
 

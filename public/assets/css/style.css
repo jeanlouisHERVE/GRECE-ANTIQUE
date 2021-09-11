@@ -368,6 +368,7 @@ body {
 
 .list--article--right {
   background-color: white;
+  margin: 0px;
 }
 
 
@@ -377,6 +378,8 @@ body {
   font-family: 'Bebas Neue', cursive;
   font-size: large;
   color:black;
+  margin: 0px;
+
 }
 
 .list--article--under--picture {
@@ -412,6 +415,7 @@ body {
   margin: 0px;
 }
 
+
 .list--article--a:hover {
   text-decoration: none;
   margin: 0px;
@@ -425,6 +429,10 @@ body {
   margin-bottom: auto;
 } 
 
+
+.list--article--column--date p {
+  margin: 0px;
+}
 /* ---------------- */
 /* --PAGE CONTACT-- */
 /* ---------------- */
