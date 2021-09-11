@@ -2,14 +2,8 @@ const categoryList = {
     init: function()
     {
         console.log('categoryList init !')
-        categoryList.pictureCategory()
-        
-       
-           
+        categoryList.pictureCategory()           
     },
-
-    
-
 
     pictureCategory: function() {
 

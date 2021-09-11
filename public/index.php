@@ -122,6 +122,17 @@ $router->map(
     'contactPost'
 );
 
+$router->map(
+    'GET',
+    '/apropos',
+    [
+        'method' => 'apropos',
+        'controller' => '\App\Controllers\MainController' 
+    ],
+    'aPropos'
+);
+
+
 $match = $router->match();
     
 $dispatcher = new Dispatcher($match, '\App\Controllers\ErrorController::err404');

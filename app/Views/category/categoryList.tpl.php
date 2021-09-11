@@ -26,6 +26,7 @@
                 </h1>
                 <div class="categorie--list--container col-12 ">
                     <?php foreach ($categories as $category) : ?>
+                        <?php $categories ?>
                         <a href="<?= $router->generate('articlesByCategory', ['id' => $category->getId()]) ?>" class=" btn col-8 d-flex">
                             <div class="category--list--unity category--list--background--picture col-12 ">
                                 <div class="category--list--h2">

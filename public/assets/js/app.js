@@ -6,8 +6,16 @@ const app = {
     console.log("App Init !");
     navbar.init();
     home.init();
-    article.init()
-    categoryList.init();   
+    
+    console.log(window.location.href.indexOf('categorie')>-1)
+
+    if (window.location.href.indexOf('categorie')>-1 === true) {
+      categoryList.init();  
+    }  
+    if (window.location.href.indexOf('article')>-1 === true) {
+      article.init()
+    }
+  
     
   },
 

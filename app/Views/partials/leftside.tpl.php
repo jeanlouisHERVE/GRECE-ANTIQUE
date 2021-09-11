@@ -11,7 +11,7 @@
                             Liste par catégorie
                         </a>
                     </li>
-                    <li class="nav-item ">
+                    <!-- <li class="nav-item ">
                         <a class="nav-link contenu--item" href="<?= $router->generate('article-views') ?>">
                             Les plus vus
                         </a>
@@ -20,7 +20,7 @@
                         <a class="nav-link contenu--item" href="<?= $router->generate('article-rates') ?>">
                             Les mieux notés
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link contenu--item" href="<?= $router->generate('article-alphabetical') ?>">
                             Par ordre alphabétique

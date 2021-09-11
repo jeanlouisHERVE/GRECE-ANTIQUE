@@ -581,8 +581,14 @@ aside .list--article--right {
 }
 
 
-.article--badge {
-  
+.articleBadge .docs {
+  background-color: red;
+}
+
+
+
+.article--badge .hist {
+  background: green;
 }
 
 .article--main--title {

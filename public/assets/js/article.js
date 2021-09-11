@@ -9,45 +9,27 @@ const article = {
 
     colorCategory: function() {
 
-        
-        const categoryName = document.querySelector('.article--badge');
+        console.log('colorCategory !')
+        const categoryName = document.querySelector('.articleBadge');
         let contentText= ' ';
-        contentText = categoryName[i].style.background
-        console.log(contentText)
 
             if (categoryName.textContent == 'histoire') {
-
-               contentText = "#6c757d"
-
+                contentText = categoryName.classList.add('bg-warning')
             } else if (categoryName.textContent == 'mythologie') {
-
-                contentText = "#007bff"
-
+                contentText = categoryName.classList.add('bg-info')
             } else if (categoryName.textContent == 'philosophie') {
-
-                contentText = "#f8f9f
+                contentText = categoryName.classList.add('bg-light')
             } else if (categoryName.textContent == 'geographie') {
-
-                contentText = "#ffc107"
-
+                contentText = categoryName.classList.add('bg-success')
             } else if (categoryName.textContent == 'politique') {
-
-                contentText = "#28a745"
-
+                contentText = categoryName.classList.add('bg-primary')
             } else if (categoryName.textContent == 'littérature') {
-
-                contentText = "#dc3545"
-
+                contentText = categoryName.classList.add('bg-danger')
             } else if (categoryName.textContent == 'documents') {
-
-                contentText = "#343a40"
-            
+                contentText = categoryName.classList.add('bg-dark')
             } else {
-
-                
+                contentText = categoryName.classList.add('pink')
             }
-
-    
-    }
+   }
 
 }

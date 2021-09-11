@@ -19,7 +19,7 @@
 
             <div class="article--entete">
                 <div class="article--above--title">
-                    <div class="article--category"><a href="<?= $router->generate('articlesByCategory', ['id' => $articleDetails->getCategory_Id()]) ?>" class="badge article--badge "><?= $articleDetails->getCategory()->getName() ?></a></div>
+                    <div class="article--category"><a href="<?= $router->generate('articlesByCategory', ['id' => $articleDetails->getCategory_Id()]) ?>" class="badge articleBadge "><?= $articleDetails->getCategory()->getName() ?></a></div>
                     <h1 class="article--main--title"><?= $articleDetails->getTitle() ?></h1>
                 </div>
                 <div class="article--under--title">

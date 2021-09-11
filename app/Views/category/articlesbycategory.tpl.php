@@ -26,7 +26,7 @@
             <div class="articlesByCategory--list">
                 <?php foreach($articlesByCategory as $articleByCategory): ?>
                         <div class="articlesByCategory--unity col-8 ">
-                            <a href="<?= $router->generate('articleById', ['id' => $articleByCategory->getId()]) ?>" class=" btn col-12 d-flex">
+                            <a href="<?= $router->generate('articleById', ['id' => $articleByCategory->getNumber()]) ?>" class=" btn col-12 d-flex">
                                 <h2><?= $articleByCategory->getTitle()?></h2>  
                             </a>      
                         </div>    
