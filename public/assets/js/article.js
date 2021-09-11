@@ -13,7 +13,7 @@ const article = {
         const categoryName = document.querySelector('.articleBadge');
         let contentText= ' ';
 
-            if (categoryName.textContent == 'histoire') {
+            if (categoryName.textContent === 'histoire') {
                 contentText = categoryName.classList.add('bg-warning')
             } else if (categoryName.textContent == 'mythologie') {
                 contentText = categoryName.classList.add('bg-info')

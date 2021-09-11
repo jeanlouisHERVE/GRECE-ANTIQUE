@@ -349,57 +349,75 @@ body {
 
 
 
+/* FILTRE DES ARTICLES */
+
+
+.filters--category {
+  padding-left: 20px;
+  align-self: center;
+}
 
 
 /* LISTE DES ARTICLES */
 
-aside .list--article--right {
+.list--article--main--container {
+  margin: 0px;
+  padding: 0px;
   background-color: white;
-
 }
 
 .list--article--right {
   background-color: white;
-  padding-left: 20px;
 }
 
-.list--article--right h1 {
+
+
+.list--article--h1 {
   text-decoration: none;
   font-family: 'Bebas Neue', cursive;
-  font-size: xx-large;
+  font-size: large;
   color:black;
-  margin-left: 40px;
-  margin-top: 40px;
 }
 
-.list--article--right h2 {
+.list--article--under--picture {
+  background-color: white;
+}
+
+
+.list--article--unity {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list--article--unity td {
+  padding :0px;
+  
+}
+
+.list--article--unity h2 {
   font-family: 'Lexend', sans-serif; 
-  font-size: x-large;
-  margin-left: 40px;
+  font-size: large;
+  margin-bottom: 0px;
 }
 
-.list--article--righ--div {
-  padding: 0px;
-}
 
-.list--article--righ--a {
+.list--article--a {
+  display: flex;
+  align-self: left;
   margin-left: 30px;
   color:black;
   width: 100%;
   margin: 0px;
 }
 
-.list--article--righ--a:hover {
+.list--article--a:hover {
   text-decoration: none;
   margin: 0px;
   
 }
 
-.list--article--unity {
-  display: flex;
-  flex-direction: row;
-  margin-left: 40px;
-}
 
 .list--article--unity .badge {
   height: 20px;

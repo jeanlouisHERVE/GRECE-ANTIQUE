@@ -2,8 +2,11 @@ const articleList = {
     init: function()
     {
         console.log('articleList init !')
-        articleList.colorCategory()          
+        articleList.colorCategory()           
     },
+
+
+
 
 
     colorCategory: function() {
