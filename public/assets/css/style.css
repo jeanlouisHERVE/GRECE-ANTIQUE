@@ -306,7 +306,38 @@ body {
   padding-top: 30px;
 }
 
-v
+/* ------------------------------ */
+/* LISTE D'ARTICLES PAR CATEGORIE */
+/* ------------------------------ */
+
+.articlesByCategory--list {
+  display: flex;
+  flex-direction: column;
+}
+
+.articlesByCategory--unity {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.articlesByCategory--unity h2 {
+  font-family: 'Lexend', sans-serif; 
+  font-size: x-large;
+  margin-left: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.articlesByCategory--unity span {
+  height: 20px;
+  margin-left: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 
 
@@ -364,6 +395,17 @@ aside .list--article--right {
   
 }
 
+.list--article--unity {
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+}
+
+.list--article--unity .badge {
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+} 
 
 /* ---------------- */
 /* --PAGE CONTACT-- */

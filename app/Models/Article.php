@@ -38,7 +38,14 @@ class Article extends CoreModel
 
     public static function findAll()
     {
-       
+        $pdo = Database::getPDO();
+        $sql = 'SELECT * FROM `article`
+        INNER JOIN `category` ON article.category_id = category.id';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute();
+        $articles = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        
+        return $articles;
     }
 
     public static function findAllTitleOfArticle()
