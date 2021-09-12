@@ -316,28 +316,41 @@ body {
 }
 
 .articlesByCategory--unity {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  margin: 0px;
-  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articlesByCategory--unity td {
+  padding :0px;
+  
 }
 
 .articlesByCategory--unity h2 {
   font-family: 'Lexend', sans-serif; 
-  font-size: x-large;
-  margin-left: 10px;
-  margin-top: auto;
-  margin-bottom: auto;
+  font-size: large;
+  margin-bottom: 0px;
 }
 
-.articlesByCategory--unity span {
+.articlesByCategory--a {
+  display: flex;
+  align-self: left;
+  margin-left: 30px;
+  color:black;
+  width: 100%;
+  margin: 0px;
+}
+
+.articlesByCategory--a:hover {
+  text-decoration: none;
+  margin: 0px;
+  
+}
+
+.articlesByCategory--unity .badge {
   height: 20px;
-  margin-left: 40px;
   margin-top: auto;
   margin-bottom: auto;
-}
+} 
 
 
 

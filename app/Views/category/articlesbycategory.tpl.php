@@ -13,23 +13,20 @@
 
         <div class="under--navbar--picture col-12"></div>
 
-        <!-- ************************Left side************************ -->
-        <div class="row ">
-            <?php
-            include __DIR__ . '/../partials/leftside.tpl.php';
-            ?>
-            <!-- ************************right side************************ -->
-            <aside class="right col-10 articlesByCategory--right">
+       
+            <!-- ************************main part************************ -->
+            <div class="right col-10 articlesByCategory--right">
                 <h1 class="articlesByCategory--main--title">Liste des articles par catégorie</h1>
                 <div class="articlesByCategory--list">
                     <?php foreach ($articlesByCategory as $articleByCategory) : ?>
-                            <div class="articlesByCategory--unity col-8 ">
-                                <a href="<?= $router->generate('articleById', ['id' => $articleByCategory->getNumber()]) ?>" class=" btn col-12 d-flex">
-                                    <span class="badge categoryBadge "><?= $articleByCategory->getCategory()->getName() ?></span>    
-                                    <h2><?= $articleByCategory->getTitle() ?> </h2>
+                        <tr class="articlesByCategory--unity d-flex justify-content-center col-12 ">
+                            
+                            <td class="articlesByCategory--column--category col-1"> <span class="badge categoryBadge "><?= $articleByCategory->getCategory()->getName() ?></span></td>
+                            <td class="articlesByCategory--column--title col-8"><a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $articleByCategory->getNumber()]) ?>">
+                                    <h2><?= $articleByCategory->getTitle() ?></h2>
                                 </a>
-                            </div>
+                            </td >  
+                        </tr>
                     <?php endforeach; ?>
-
                 </div>
-            </aside>
+            </div>
