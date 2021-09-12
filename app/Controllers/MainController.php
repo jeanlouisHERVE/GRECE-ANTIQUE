@@ -37,4 +37,14 @@ class MainController extends CoreController
            
         ]);
     }
+
+    public function apropos()
+    {
+       
+        $this->show('main/contact', [
+           
+        ]);
+    }
+
+
 }

@@ -60,11 +60,11 @@
                     Les mieux notés
                 </a>
             </li> -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link contenu--item" href="<?= $router->generate('article-alphabetical') ?>">
                     Par ordre alphabétique
                 </a>
-            </li>
+            </li> -->
 
         </ul>
     </div>

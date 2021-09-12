@@ -17,10 +17,7 @@
             </div>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
                 <label class="filters filters--all btn btn-outline-primary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Tous
-                </label>
-                <label class="filters filters--alphabet btn btn-outline-primary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> A - Z
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> A - Z
                 </label>
                 <label class="filters filters--date btn btn-outline-primary">
                     <input type="radio" name="options" id="option3" autocomplete="off"> Date
@@ -35,15 +32,15 @@
                 <tbody class="col-12">
                     <?php foreach ($titleList as $title) : ?>
                         <tr class="list--article--unity d-flex justify-content-center col-12 ">
+                            
                             <td class="list--article--column--category col-1"> <span class="badge categoryBadge "><?= $title->getCategory()->getName() ?></span></td>
-                            <td class="list--article--column--title col-8"><a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $title->getId()]) ?>">
+                            <td class="list--article--column--title col-8"><a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $title->getNumber()]) ?>">
                                     <h2><?= $title->getTitle() ?></h2>
                                 </a>
                             </td >  
-                            <td class="list--article--column--date col-1
-                            ">
+                            <td class="list--article--column--date col-1">
                                 <p><?= $title->setCreated_at("d-m-Y") ?></p>
-                            </td>
+                            </td>   
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
