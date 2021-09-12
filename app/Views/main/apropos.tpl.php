@@ -10,7 +10,7 @@
   <!-- ************************container************************ -->
 
   <div class="container main--container--apropos col-12 p-0 d-flex">
-    <aside class="right--apropos col-6 p-3">
+    <aside class="left--apropos col-6 p-3">
         <h2 class="apropos--websitetitle">
           grece antique
         </h2>
@@ -18,8 +18,8 @@
           A propos
         </h1>
     </aside>
-    <aside class="left--apropos col-6">
-        <div class="left--apropos--picture"></div>
+    <aside class="right--apropos col-6">
+        <div class="apropos--picture"></div>
     </aside>
     
   </div>

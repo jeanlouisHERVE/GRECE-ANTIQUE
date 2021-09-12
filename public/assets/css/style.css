@@ -462,7 +462,7 @@ body {
 }
 
 .left--contact--picture {
-  background: url('../img/statue-8450_1920.jpg');
+  background: url('../img/hermes.jpg');
   background-size: cover;
   background-position: top;
   height: 100vh;
@@ -516,6 +516,20 @@ body {
 .contact--imput {
   border: solid 1px black ;
 }
+
+/* ----------------- */
+/* --PAGE A PROPOS-- */
+/* ----------------- */
+
+.apropos--picture {
+  background: url('../img/cnossos.jpg');
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  width: auto;
+  margin-left: 0px;
+}
+
 
 /* ------------------ */
 /* --CATEGORIE LIST-- */

@@ -64,9 +64,11 @@ abstract class CoreModel
      *
      * @return  string
      */
-    public function getCreatedAt() : string
+    public function getCreatedAt($format) : string
     {
-        return $this->created_at;
+        $oldDate = $this->created_at;
+        $newDate = date($format, strtotime($oldDate));
+        return $newDate;
     }
 
     /**
@@ -79,19 +81,5 @@ abstract class CoreModel
         return $this->updated_at;
     }
 
-
-    /**
-     * Set the value of created_at
-     *
-     * @param  string  $created_at
-     *
-     * @return  self
-     */ 
-    public function setCreated_at($format)
-    {
-        $oldDate = $this->created_at;
-        $newDate = date($format, strtotime($oldDate));
-        return $newDate;
-    }
 
 }

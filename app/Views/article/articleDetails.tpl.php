@@ -23,7 +23,7 @@
                     <h1 class="article--main--title"><?= $articleDetails->getTitle() ?></h1>
                 </div>
                 <div class="article--under--title">
-                    <p class="article--createdAt">Publié le : <?= $articleDetails->setCreated_at("d-m-Y") ?></p>
+                    <p class="article--createdAt">Publié le : <?= $articleDetails->getCreatedAt("d-m-Y") ?></p>
                     <p class="article--author">par <?= $articleDetails->getAuthor()->getFirstname() ?></p>
                 </div>
 

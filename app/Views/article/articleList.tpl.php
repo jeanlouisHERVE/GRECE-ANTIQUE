@@ -39,9 +39,11 @@
                                 </a>
                             </td >  
                             <td class="list--article--column--date col-1">
-                                <p><?= $title->setCreated_at("d-m-Y") ?></p>
-                            </td>   
+                                <p><?= $title->getCreatedAt("d-m-Y") ?></p>
+                            </td>  
+                            
                         </tr>
+                        <td><?= var_dump($title) ?></td> 
                     <?php endforeach; ?>
                 </tbody>
             </table>
