@@ -13,9 +13,9 @@
 
         <div class="under--navbar--picture col-12"></div>
 
-            <div class="right  list--article--right col-12">
+            <div class="right  categorie--list--right col-12">
 
-                <h1 class="list--article--main--title m-0 pt-3 pl-3">
+                <h1 class="categorie--list--main--title m-0 pt-3 pl-3">
                     Liste des categories
                 </h1>
                 <div class="categorie--list--container col-12 ">

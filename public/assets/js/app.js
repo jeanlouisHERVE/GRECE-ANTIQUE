@@ -8,7 +8,7 @@ const app = {
     home.init();
 
     if (window.location.href.indexOf('categorie')>-1 === true) {
-      categoryList.init();  
+      category.init();  
     }  
    
     if (window.location.href.indexOf('articlelist')>-1 === true) {

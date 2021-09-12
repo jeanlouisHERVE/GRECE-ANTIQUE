@@ -508,11 +508,10 @@ body {
 /* --CATEGORIE LIST-- */
 /* ------------------ */
 
-.list--article--right {
+.categorie--list--right {
+  background-color: white;
   padding: 0px;
-
 }
-
 
 .under--navbar--picture {
   background: url('../img/archaeology-4881001.jpg');
@@ -522,13 +521,22 @@ body {
   
 }
 
+.categorie--list--main--title {
+  text-transform: uppercase;
+  font-family: 'Lexend', sans-serif; 
+  color:black;
+  text-align: center;
+  padding: 16px;
+}
+
+
 
 .categorie--list--container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding: 0px;
 }
 
 .categorie--list--container a {
@@ -536,29 +544,25 @@ body {
   justify-content: center;
 }
 
-.category--list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-transform: uppercase;
-  font-family: 'Lexend', sans-serif; 
-  color:black;
-  border-radius: 50px;
-  
-}
 
 .category--list--unity {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 15px 10px 20px;
   border: solid black 5px;
   margin-top: 10px;
   border-radius: 50px;
   text-transform: uppercase;
-  background: url('../img/epidaure.jpg');
-  background-size: cover;
-  background-position: center;
+  text-transform: uppercase;
+  font-family: 'Lexend', sans-serif; 
+  color:black;
+  background-color: white;
+}
+
+.category--list--name {
+  margin: 0px
+
 }
 
 .category--list--arrow {
@@ -576,47 +580,7 @@ body {
 }
 
 
-.history {
-  background: url('../img/athens-3411147.jpg');
-  background-size: cover;
-  background-position: center;
 
-}
-
-.mythology {
-  background: url('../img/epidaure.jpg');
-  background-size: cover;
-  background-position: center;
-  
-}
-
-.geography {
-  background: url('../img/epidaure.jpg');
-  background-size: cover;
-  background-position: center;
-  
-}
-
-.politics {
-  background: url('../img/delphi-1919203.jpg');
-  background-size: cover;
-  background-position: center;
-  
-}
-
-.litterature {
-  background: url('../img/epidaure.jpg');
-  background-size: cover;
-  background-position: center;
-  
-}
-
-.documents {
-  background: url('../img/epidaure.jpg');
-  background-size: cover;
-  background-position: center;
-  
-}
 
 
 
