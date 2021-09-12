@@ -521,6 +521,11 @@ body {
 /* --PAGE A PROPOS-- */
 /* ----------------- */
 
+.right--apropos {
+  height: 100vh;
+
+}
+
 .apropos--picture {
   background: url('../img/cnossos.jpg');
   background-size: cover;
@@ -528,6 +533,34 @@ body {
   height: 100vh;
   width: auto;
   margin-left: 0px;
+  border-radius: 1%;
+}
+
+.left--apropos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+
+.text--apropos {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  text-align: justify;
+
+}
+
+.apropos--title {
+  font-family: 'Bebas Neue', cursive; 
+  color:black;
+  
+}
+
+.apropos--achille {
+  height: 150px;
+  margin-right: 20px;
 }
 
 
