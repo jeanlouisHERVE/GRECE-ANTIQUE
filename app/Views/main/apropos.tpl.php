@@ -17,10 +17,12 @@
           <img class="apropos--achille" src="<?= $absoluteUrl ?>assets/img/achille.jpg" alt="">
           <div class="apropos--paragraphe">
             <p>Le site "Grece Antique" est né en 2009 alors que étudiant en classe préparatoire aux grandes écoles, j'ai ressenti le besoin de transmettre ma passion au plus grand nombre. Cette première version est restée en ligne jusqu'en 2012</p>
-            <p>En 2021, j'ai retrouvé les articles publiés dix ans plus tôt sur ce site et j'ai décidé de rebâtir et de moderniser "Grece Antique". J'espère que vous l'apprécierez </p>
+            <p>En 2021, j'ai retrouvé les articles publiés dix ans plus tôt et j'ai décidé de rebâtir et de moderniser le site "Grece Antique". J'espère que vous l'apprécierez </p>
           </div>
         </div>
       </div>
+      <a href="<?= $router->generate('article-list') ?>" class="apropos--link col-3"><button type="button" class="btn btn-outline-info">Consulter les articles</button></a>
+      
     </aside>
     <aside class="right--apropos p-0 col-6">
       <div class="apropos--picture "></div>

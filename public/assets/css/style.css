@@ -468,6 +468,7 @@ body {
   height: 100vh;
   width: auto;
   margin-left: 0px;
+  border-radius: 1%;
 }
 
 .right--contact {
@@ -557,6 +558,12 @@ body {
   color:black;
   
 }
+
+.apropos--link {
+  margin-top: 30px;
+  align-self: center;
+}
+
 
 .apropos--achille {
   height: 150px;

@@ -32,7 +32,6 @@
                 <tbody class="col-12">
                     <?php foreach ($titleList as $title) : ?>
                         <tr class="list--article--unity d-flex justify-content-center col-12 ">
-                            
                             <td class="list--article--column--category col-1"> <span class="badge categoryBadge "><?= $title->getCategory()->getName() ?></span></td>
                             <td class="list--article--column--title col-8"><a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $title->getNumber()]) ?>">
                                     <h2><?= $title->getTitle() ?></h2>
@@ -41,9 +40,7 @@
                             <td class="list--article--column--date col-1">
                                 <p><?= $title->getCreatedAt("d-m-Y") ?></p>
                             </td>  
-                            
                         </tr>
-                        <td><?= var_dump($title) ?></td> 
                     <?php endforeach; ?>
                 </tbody>
             </table>
