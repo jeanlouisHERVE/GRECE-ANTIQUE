@@ -310,6 +310,14 @@ body {
 /* LISTE D'ARTICLES PAR CATEGORIE */
 /* ------------------------------ */
 
+.articlesByCategory--under--navbar--picture {
+  background: url('../img/delphe.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+
 .articlesByCategory--list {
   display: flex;
   flex-direction: column;
@@ -322,7 +330,7 @@ body {
 
 .articlesByCategory--unity td {
   padding :0px;
-  
+  height: 30px;
 }
 
 .articlesByCategory--unity h2 {
@@ -373,6 +381,13 @@ body {
 
 /* LISTE DES ARTICLES */
 
+.list--article--under--navbar--picture {
+  background: url('../img/sounion.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
 .list--article--main--container {
   margin: 0px;
   padding: 0px;
@@ -400,8 +415,9 @@ body {
   margin-right: 0px;
 }
 
-.list--article--h1 h1 {
-  margin-right: 0px;
+.list--article--column--category {
+  height: 30px;
+
 }
 
 .list--article--top--menu--right {
@@ -598,11 +614,18 @@ body {
   padding: 0px;
 }
 
-.under--navbar--picture {
-  background: url('../img/archaeology-4881001.jpg');
+.list--article--under--navbar--picture {
+  background: url('../img/sounion.jpg');
   background-size: cover;
   background-position: center;
-  height: 300px;
+  height: 500px;
+}
+
+.categorie--list--under--navbar--picture {
+  background: url('../img/cyclade.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
   
 }
 
@@ -644,6 +667,11 @@ body {
   background-color: white;
 }
 
+.category--list--unity:hover {
+  color: white;
+  background-color: black;
+}
+
 .category--list--name {
   margin: 0px
 
@@ -654,13 +682,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
   
 }
 
-.category--list--arrow i {
+.category--list--arrow--i {
   font-size: 40px;
   color: black;
+}
+
+.category--list--arrow--i:hover {
+  font-size: 40px;
+  color: white;
 }
 
 /* --------------------- */
@@ -694,12 +726,16 @@ body {
 /* --PAGE ARTICLE---- */
 /* ------------------ */
 
-
-
+.article--under--navbar--picture {
+ background: url('../img/cnossos.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
 
 .article--container {
   background-color: white;
-  margin-top: -80px;
+  margin-top: -100px;
   margin-bottom: 40px;
   align-self: center;
   margin-left: auto;

@@ -10,7 +10,7 @@
     <!-- ************************container************************ -->
 
     <div class="list--article--main--container col-12 ">
-        <div class="under--navbar--picture col-12"></div>
+        <div class="list--article--under--navbar--picture col-12"></div>
         <div class="list--article--hfilter col-12">
             <div class="list--article--h1 mr-0 col-4">
                 <h1 class=" col-10">Liste des articles</h1>

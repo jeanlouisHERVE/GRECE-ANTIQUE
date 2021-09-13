@@ -39,7 +39,8 @@ class Article extends CoreModel
     public static function findAll()
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT * FROM `article`
+        $sql = 'SELECT *, article.created_at AS articleCreated_at 
+        FROM `article`
         INNER JOIN `category` ON article.category_id = category.id
         ORDER BY `title` asc';
         $pdoStatement = $pdo->prepare($sql);

@@ -11,7 +11,7 @@
 
     <div class="container main--container articlePage article col-12">
 
-        <div class="under--navbar--picture col-12"></div>
+        <div class="article--under--navbar--picture col-12"></div>
 
         <!-- ************************welcome message************************ -->
 
