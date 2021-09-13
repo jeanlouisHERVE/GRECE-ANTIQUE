@@ -2,7 +2,10 @@ const category = {
     init: function()
     {
         console.log('categoryList init !')
-        category.colorCategory()          
+        category.colorCategory() 
+        
+        arrowElement = document.querySelectorAll('.category--list--unity');
+        arrowElement.addEventListener('mouseover', category.turnArrowToWhite());
     },
 
     colorCategory: function() {
@@ -32,5 +35,17 @@ const category = {
                 contentText = categoryName[i].classList.add('pink')
             }
         }
+    },
+
+    turnArrowToWhite: function(){
+
+        for (let i = 0; i < arrowElement.length ; i++) {
+            console.log('arrow in white !')
+            const singleArrow = document.querySelector('..category--list--arrow')
+            singleArrow[i].style.color('white')
+
+        }
+
+
     }
 }
