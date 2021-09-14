@@ -16,7 +16,7 @@
        
             <!-- ************************main part************************ -->
             <div class="articlesByCategory--main col-12 ">
-                <h1 class="articlesByCategory--main--title">Liste des articles par catégorie</h1>
+                <h1 class="articlesByCategory--main--title">Liste des articles </h1>
                 <div class="articlesByCategory--list">
                 <table class="articlesByCategory--table table d-flex flex-column justify-content-center align-items-center col-11">
                 <tbody class="col-12">

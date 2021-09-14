@@ -11,18 +11,17 @@
 
     <div class="container main--container col-12">
 
-        <div class="categorie--list--under--navbar--picture col-12"></div>
-
             <div class="right  categorie--list--right col-12">
-
-                <h1 class="categorie--list--main--title m-0 pt-3 pl-3">
-                    Liste des categories
-                </h1>
-                <div class="categorie--list--container col-12 ">
+                <div class="divTitle col-4">
+                    <h1 class="categorie--list--main--title ">
+                        Liste des categories
+                    </h1>
+                </div>
+                <div class="categorie--list--container col-7 ">
                     <?php foreach ($categories as $category) : ?>
                         <?php $categories ?>
-                        <a href="<?= $router->generate('articlesByCategory', ['id' => $category->getId()]) ?>" class=" btn col-3 d-flex">
-                            <div class="category--list--unity category--list--background--picture col-12 ">
+                        <a href="<?= $router->generate('articlesByCategory', ['id' => $category->getId()]) ?>" class=" btn d-flex col-6">
+                            <div class="category--list--unity">
                                 <div class="category--list--h2">
                                     <h2 class="category--list--name"><?= $category->getName() ?></h2>
                                 </div>
@@ -33,6 +32,7 @@
                         </a>
                     <?php endforeach; ?>
                 </div>
+                <div class="vide col-1"></div>
             </div>
 
 
