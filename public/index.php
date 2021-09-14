@@ -40,7 +40,7 @@ $router->map(
 
 $router->map(
     'GET',
-    '/categories/list',
+    '/categorylist',
     [
         'method' => 'categories',
         'controller' => '\App\Controllers\ArticleController' 

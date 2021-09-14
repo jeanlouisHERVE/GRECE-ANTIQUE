@@ -640,7 +640,7 @@ body {
 
 .categorie--list--container{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0px;
@@ -667,10 +667,6 @@ body {
   background-color: white;
 }
 
-.category--list--unity:hover {
-  color: white;
-  background-color: black;
-}
 
 .category--list--name {
   margin: 0px
@@ -690,10 +686,7 @@ body {
   color: black;
 }
 
-.category--list--arrow--i:hover {
-  font-size: 40px;
-  color: white;
-}
+
 
 /* --------------------- */
 /* --ARTICLEBYCATEGORY-- */

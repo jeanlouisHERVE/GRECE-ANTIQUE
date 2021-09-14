@@ -6,6 +6,10 @@ const app = {
     console.log("App Init !");
     navbar.init();
     home.init();
+    
+    if (window.location.href.indexOf('categorylist')>-1 === true) {
+      tasks.init();  
+    }  
 
     if (window.location.href.indexOf('categorie')>-1 === true) {
       category.init();  
@@ -23,10 +27,9 @@ const app = {
     if (window.location.href.indexOf('contact')>-1 === true) {
       contactTask.init()
     }
+
     
   },
-
-  
 
 }
 

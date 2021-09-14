@@ -44,7 +44,7 @@
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/categoryList.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/article.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/articleList.js"></script>
-    
+    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/tasks.js"></script>
 </head>
 
 <!-- ************************navbar************************ -->

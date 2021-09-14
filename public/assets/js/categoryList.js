@@ -4,8 +4,7 @@ const category = {
         console.log('categoryList init !')
         category.colorCategory() 
         
-        arrowElement = document.querySelectorAll('.category--list--unity');
-        arrowElement.addEventListener('mouseover', category.turnArrowToWhite());
+        
     },
 
     colorCategory: function() {
@@ -15,8 +14,6 @@ const category = {
         let contentText= ' ';
 
         for (let i = 0 ; i < categoryName.length ; i++ ) {
-            
-            console.log()
             if (categoryName[i].textContent == 'histoire') {
                 contentText = categoryName[i].classList.add('bg-warning')
             } else if (categoryName[i].textContent == 'mythologie') {
@@ -36,16 +33,4 @@ const category = {
             }
         }
     },
-
-    turnArrowToWhite: function(){
-
-        for (let i = 0; i < arrowElement.length ; i++) {
-            console.log('arrow in white !')
-            const singleArrow = document.querySelector('..category--list--arrow')
-            singleArrow[i].style.color('white')
-
-        }
-
-
-    }
 }
