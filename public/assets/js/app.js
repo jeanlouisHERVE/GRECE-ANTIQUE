@@ -6,10 +6,6 @@ const app = {
     console.log("App Init !");
     navbar.init();
     home.init();
-    
-    if (window.location.href.indexOf('categorylist')>-1 === true) {
-      tasks.init();  
-    }  
 
     if (window.location.href.indexOf('categorie')>-1 === true) {
       category.init();  

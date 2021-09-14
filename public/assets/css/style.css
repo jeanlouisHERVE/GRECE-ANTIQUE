@@ -667,6 +667,17 @@ body {
   background-color: white;
 }
 
+.category--list--unity:hover {
+  background-color: black;
+  color: white;
+
+}
+
+.category--list--unity:hover .category--list--arrow--i {
+  color: white;
+
+
+ }
 
 .category--list--name {
   margin: 0px
