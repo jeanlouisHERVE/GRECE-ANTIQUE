@@ -9,13 +9,13 @@
 
   <!-- ************************container************************ -->
 
-  <div class="container main--container--contact col-12 p-0 d-flex">
-    <aside class="left--contact col-6">
+  <div class="container main--container--contact col-sm-12 d-flex flex-wrap-reverse col-md-12 flex-row p-0 ">
+    <aside class="left--contact col-sm-12 col-lg-6">
     <div class="left--contact--picture">
 
     </div>
     </aside>
-    <aside class="right--contact col-6 p-3">
+    <aside class="right--contact col-sm-12 d-flex flex-column justify-content-center align-content-center col-lg-6 p-3">
         <h2 class="contact--websitetitle">
           grece antique
         </h2>
@@ -24,7 +24,7 @@
         </h1>
         <form class="needs-validation " novalidate>
 
-          <div class="form-row d-flex justify-content-between px-3">
+          <div class="form-row  d-flex justify-content-between px-3">
             <div class="col-md-6 mb-3 ">
               <label for="validationCustom01">Nom</label>
               <input type="text" class="form-control contact--imput" id="validationCustom01" placeholder="First name" value="Mark" required>

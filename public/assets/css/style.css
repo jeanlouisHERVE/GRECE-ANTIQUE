@@ -506,11 +506,7 @@ body {
 }
 
 .right--contact {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+  height: 100vh;  
   background: white;
 }
 
@@ -520,11 +516,6 @@ body {
   padding: 0px 15px;
 }
 
-.right--contact--content{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
 
 .right--contact h2 {
   font-family: 'Bebas Neue', cursive; 
