@@ -562,18 +562,9 @@ body {
 }
 
 .left--apropos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100vh;
 }
 
-.apropos--content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-}
 
 .text--apropos {
   border-bottom: 1px solid black;
