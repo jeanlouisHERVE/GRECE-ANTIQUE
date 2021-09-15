@@ -126,26 +126,7 @@ body {
   background-image: url("../img/epidaure.jpg");
   background-size: cover;
   background-position: center;
-}
-
-/* HEADER */
-
-/* CONTAINER */
-
-.main--container {
-  
-  height: 100%; 
-  padding-left:0px; 
-  padding-right:0px; 
-  width:100vw;
-
-}
-
-/* JUMBOTRON */
-
-.jumbotron {
-  height:100vh;
-  margin-bottom: 0px;
+  height: 100vh;
 }
 
 .jumbotron--homeTitle {
@@ -160,22 +141,38 @@ body {
   background-color: white;
 }
 
-/* WELCOME MESSAGE */
-.welcome--message {
-  background: white; 
-  margin-left:0px; 
-  margin-right:0px; 
+/* HEADER */
+
+/* CONTAINER */
+
+.main--container {
+  
+  height: 100%; 
+  padding-left:0px; 
+  padding-right:0px; 
+  width:100vw;
 }
 
+/* WELCOME MESSAGE */
+.welcome--message {
+  margin-left:0px; 
+  margin-right:0px; 
+  background-color: white;
+}
 
 .welcome--presentation {
   z-index: 6; 
-  height: 100vh; 
-  
-  
-
+  height: auto; 
 }
 
+.welcome--picture {
+  width: 100%;
+  background-image: url("../img/athens-3411147.jpg");
+  background-size: cover;
+  background-position: center;
+  height:50vh;
+
+}
 
 .welcome--presentation--text {
   font-size: larger; 
@@ -189,19 +186,9 @@ body {
 
 }
 
-.welcome--picture {
-  width: 100%;
-  opacity: 0.7;
-}
-
-.welcome--picture:hover {
-  width: 100%;
-  opacity: 1;
-}
 
 .welcome--button {
   margin-top: 50px;
-  width: 50%;
   color: #7bc9fe;
   border: #7bc9fe solid 2px;
   font-weight: 700;
@@ -224,18 +211,13 @@ body {
 
 .favorite-articles {
   background: #7bc9fe; 
-  padding-top: 30px;
-  padding-bottom: 30px;
   width: 100%;
   margin-right: 0px;
   margin-left: 0px;
 }
 
 .home--card--body{
- height: 100%;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
+ height:200px;
 }
 
 .home--card--title {
@@ -600,9 +582,6 @@ body {
   background-position: center;
   padding-bottom: 50px;
   padding-top: 50px;
-  display: flex;
-  flex-direction: row;
-  align-items: space-between;
 }
 
 .categorie--list--main--title {
@@ -618,24 +597,14 @@ body {
 }
 
 .categorie--list--container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0px;
 }
 
 .categorie--list--container a {
   width: 100%;
-
-
 }
 
-
 .category--list--unity {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 0px 15px 0px 20px;
   border: solid black 3px;
   margin-top: 10px;
@@ -667,10 +636,6 @@ body {
 
 .category--list--arrow {
   align-self: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
 }
 
 .category--list--arrow--i {
