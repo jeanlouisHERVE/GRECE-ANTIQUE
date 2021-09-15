@@ -11,7 +11,7 @@ class ArticleController extends CoreController
 {
     public function list()
     {
-        $titleList = Article::findAll();
+        $titleList = Article::findAllArticle();
         $this->show('article/articleList',['titleList' => $titleList, ]);
     }
 

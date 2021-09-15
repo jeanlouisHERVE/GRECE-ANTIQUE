@@ -60,6 +60,22 @@
             <button class="btn form--button--contact mx-auto" type="submit">Envoyer</button>
           </div>
         </form>
+
+        <?php
+            if (isset($_POST['Message'])) {
+              var_dump($_POST);  
+              $position_arobase = strpos($_POST['Email'], '@');
+                if ($position_arobase === false)
+                    echo '<p>Votre email doit comporter un arobase.</p>';
+                else {
+                    $retour = mail('jeanlouis.herve@hotmail.fr', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+                    if($retour)
+                        echo '<p>Votre message a été envoyé.</p>';
+                    else
+                        echo '<p>Erreur.</p>';
+                }
+            }
+        ?>
     </aside>
 
 

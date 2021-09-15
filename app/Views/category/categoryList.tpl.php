@@ -26,7 +26,7 @@
                                     <h2 class="category--list--name"><?= $category->getName() ?></h2>
                                 </div>
                                 <div class="category--list--arrow">
-                                    <i class="fas fa-arrow-circle-right category--list--arrow--i"></i>
+                                    <i class="fas fa-chevron-right category--list--arrow--i"></i>
                                 </div>
                             </div>
                         </a>

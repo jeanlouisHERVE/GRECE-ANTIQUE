@@ -39,9 +39,9 @@ class Article extends CoreModel
     public static function findAll()
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT *, article.created_at AS articleCreated_at 
+        $sql = 'SELECT *
         FROM `article`
-        INNER JOIN `category` ON article.category_id = category.id
+        INNER JOIN `category` ON `article`.category_id = `category`.id
         ORDER BY `title` asc';
         $pdoStatement = $pdo->prepare($sql);
         $pdoStatement->execute();
@@ -50,10 +50,25 @@ class Article extends CoreModel
         return $articles;
     }
 
+    public static function findAllArticle()
+    {
+        $pdo = Database::getPDO();
+        $sql = 'SELECT `article`.*, `category`.name, `category`.id AS `categoryId`
+        FROM `article`
+        INNER JOIN `category` ON article.category_id = category.id
+        ORDER BY `title` asc';
+        $pdoStatement = $pdo->prepare($sql);
+        $pdoStatement->execute();
+        $titleList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
+        
+        return $titleList;
+    }  
+
+
     public static function findAllTitleOfArticle()
     {
         $pdo = Database::getPDO();
-        $sql = 'SELECT `id`,`title` FROM `article`';
+        $sql = 'SELECT `id`,`title`,`created_at`,  FROM `article`';
         $pdoStatement = $pdo->prepare($sql);
         $pdoStatement->execute();
         $titleList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, self::class); 
