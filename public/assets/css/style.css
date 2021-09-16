@@ -257,35 +257,6 @@ body {
   padding-bottom: 10px;
 }
 
-/* ---------------------------- */
-/*  ASIDE LEFT LISTE D'ARTICLES */
-/* ---------------------------- */
-
-.collapse--menu--left-side {
-  display: flex;
-  flex-direction: column;
-}
-
-.list--article--left h2 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: x-large;
-  margin-left: 20px;
-  background-color: chartreuse;
-  text-align: center;
-}
-
-.collapse--menu--left-side .nav-item {
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.list--article--left {
-  background-color:teal;
-  height: 100vh;
-  padding-top: 30px;
-}
-
 /* ------------------------------ */
 /* LISTE D'ARTICLES PAR CATEGORIE */
 /* ------------------------------ */
@@ -374,12 +345,6 @@ body {
   background-color: white;
 }
 
-.list--article--hfilter {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 
 .list--article--right {
   background-color: white;
@@ -401,9 +366,6 @@ body {
 }
 
 .list--article--top--menu--right {
-  display: flex;
-  flex-direction: row;
-  justify-content:flex-end;
   height: 100%;
   width: auto;
   padding-right: 30px;
@@ -415,8 +377,6 @@ body {
 
 
 .list--article--unity {
-  display: flex;
-  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
 }
@@ -434,7 +394,6 @@ body {
 
 
 .list--article--a {
-  display: flex;
   align-self: left;
   margin-left: 30px;
   color:black;
