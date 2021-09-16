@@ -16,8 +16,8 @@
         <div class="apropos--content d-flex flex-row align-items-center">
           <img class="apropos--achille d-none d-md-block " src="<?= $absoluteUrl ?>assets/img/achille.jpg" alt="">
           <div class="apropos--paragraphe">
-            <p>Le site "Grece Antique" est né en 2009 alors que étudiant en classe préparatoire aux grandes écoles, j'ai eeu beaucoup de plaisir à transmettre ma passion au plus grand nombre. Cette première version est restée en ligne jusqu'en 2012</p>
-            <p>En 2021, j'ai retrouvé les articles publiés dix ans plus tôt et j'ai décidé de rebâtir et de moderniser le site "Grece Antique".  </p>
+            <p>Le site "Grece Antique" est né en 2009 alors que étudiant en classe préparatoire aux grandes écoles, j'ai eu beaucoup de plaisir à transmettre ma passion au plus grand nombre. Cette première version est restée en ligne jusqu'en 2012</p>
+            <p>En 2021, j'ai retrouvé les articles publiés dix ans auparavant et j'ai décidé de rebâtir et de moderniser le site "Grece Antique".  </p>
             <p>J'espère que vous l'apprécierez.</p>
           </div>
         </div>
