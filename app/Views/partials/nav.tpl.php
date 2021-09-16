@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark fixed-top col-12 ">
-    <div class="container navbar--container d-flex justify-content-between align-items-center col-12   " ;>
-        <div class="narbar-logo col-sm-12 d-flex justify-content-center align-items-center col-md-5 justify-content-md-start col-lg-3">
+    <div class="container navbar--container  col-12 d-flex justify-content-center align-content-center  justify-content-lg-between" ;>
+        <div class="narbar-logo col-sm-12 d-flex justify-content-center align-items-center col-md-4 justify-content-md-start">
             <a class="navbar--mainlogo logo" href="#">
                 <img src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top achille" alt="">
                 <div class="navbar--maintitle--div">
