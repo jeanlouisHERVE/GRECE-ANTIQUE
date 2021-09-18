@@ -654,11 +654,6 @@ body {
   color:black;
 }
 
-.article--entete {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end;
-}
 
 .article--above--title {
   margin-top: 20px;
@@ -683,10 +678,6 @@ body {
 }
 
 .article--under--title {
-
-  display: flex;
-  align-content: center;
-  flex-direction: row;
   border-bottom: black 1px solid;
   margin-bottom: 20px;
   padding-bottom: 10px;
