@@ -9,25 +9,24 @@
                 <img src="<?= $absoluteUrl ?>assets/img/vieuxcarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top vieux" alt="">
             </a>
         </div>
-        <div class="navbar--menu d-flex justify-content-center align-items-center pt-0 ">
-            <ul class="nav justify-content-center  ">
-                <li class="nav-item">
-                    <a class="nav-link nav-link-navbar nav-item-btn1 active" aria-current="page" href="<?= $router->generate('main-home') ?>">
+        <div class="navbar--menu col-12 d-flex justify-content-center align-items-center pt-0 ">
+            <ul class="nav bg-primary col-12 flex-column col-md-7 flex-md-row ">
+                <li class="nav-item col-12">
+                    <a class="nav-link nav-link-navbar nav-item-btn1 active text-center" aria-current="page" href="<?= $router->generate('main-home') ?>">
                         Accueil
                     </a>
                 </li>
-                <li class="nav-item nav-item-btn nav-link--article ">
-                    <a class="nav-link nav-link-navbar d-flex align-items-center" href="#">
-                        Articles
+                <li class="nav-item nav-item-btn nav-link--article col-12 ">
+                    <a class="nav-link nav-link-navbar d-flex justify-content-center align-items-center " href="#">
+                        <div><p class="m-0"> Articles </p></div>
                         <div class="arrow ml-1">►</div>
                     </a>
-
-                <li class="nav-item">
+                <li class="nav-item col-12 text-center">
                     <a class="nav-link nav-link-navbar " href="<?= $router->generate('contact') ?>">
                         Contact
                     </a>
                 </li>
-                <div class="nav--connexion ">
+                <div class="nav--connexion col-12 text-center">
                     <a class="nav-link nav-link-navbar" href="<?= $router->generate('aPropos') ?>">
                         A propos
                     </a>

@@ -1,6 +1,7 @@
 .col-actions {
   width: 60px;
 }
+
 /* -------------- */
 /* ---NAVBAR----- */
 /* -------------- */
@@ -12,27 +13,19 @@
   height: 60px;
   background-color:white;
   padding: 0px;
- }
+}
 
 .navbar--container {
   margin: 0px;
   background-color:white;
 }
 
-.narbar-logo {
-
-}
-
  .vieux {
   transform: scaleX(-1);
-  
 }
-
-
 
 .navbar--maintitle--div {
   margin-right: 20px;
- 
 }
 
 
@@ -47,20 +40,16 @@
 .navbar--maintitle--link:hover{
   text-decoration: none;
   color: black;
-  
-
 }
 
 .dropdown-menu {
   color:black;
-
 }
 
 .navbar--menu .nav-item {
   font-family: 'Bebas Neue', cursive;
   font-size: x-large;
   color:black;
-
 }
 
 .navbar--menu .nav-item .btn-link {

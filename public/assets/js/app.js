@@ -1,6 +1,8 @@
 
 const app = {
 
+  
+
   init: function() {
 
     console.log("App Init !");
@@ -20,12 +22,7 @@ const app = {
     if (window.location.href.indexOf('article/')>-1 === true) {
       article.init()
     }
-
-    if (window.location.href.indexOf('contact')>-1 === true) {
-      contactTask.init()
-    }
-
-    
+       
   },
 
 }
