@@ -367,11 +367,13 @@ body {
 
 .list--article--top--menu--right {
   height: 100%;
-  padding-right: 30px;
+  
 }
 
 .list--article--under--picture {
   background-color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
