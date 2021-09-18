@@ -501,7 +501,7 @@ body {
 
 
 /* ------------------ */
-/* --CATEGORIE LIST-- */
+/* --CATEGORY LIST-- */
 /* ------------------ */
 
 .category--list--right {
@@ -549,6 +549,9 @@ body {
 
 .category--list--unity:hover {
   border-left: black 2px solid ;
+  background-color: rgba(254, 254, 254, 0.5);
+  border-bottom-right-radius: 10px;
+  border-top-right-radius:10px;
 }
 
 .category--list--name {

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark fixed-top col-12 ">
-    <div class="container navbar--container  col-12 d-flex justify-content-center align-content-center  justify-content-lg-between" ;>
-        <div class="narbar-logo col-sm-12 d-flex justify-content-center align-items-center col-md-5 justify-content-md-start">
+    <div class="container navbar--container  col-12 d-flex justify-content-center align-content-center flex-md-row justify-content-lg-between" ;>
+        <div class="narbar-logo col-sm-12 d-flex justify-content-center align-items-center col-md-4 justify-content-md-start">
             <a class="navbar--mainlogo logo" href="#">
                 <img src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top achille" alt="">
                 <div class="navbar--maintitle--div">
@@ -9,25 +9,25 @@
                 <img src="<?= $absoluteUrl ?>assets/img/vieuxcarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top vieux" alt="">
             </a>
         </div>
-        <div class="navbar--menu col-12 d-flex justify-content-center align-items-center pt-0 ">
-            <ul class="nav bg-primary col-12 flex-column col-md-7 flex-md-row ">
-                <li class="nav-item col-12">
+        <div class="navbar--menu col-12 d-flex justify-content-center align-items-center pt-0 col-md-8 col-lg-6">
+            <ul class="nav col-12 flex-column flex-md-row justify-content-md-end">
+                <li class="nav-item col-12 col-md-3 ">
                     <a class="nav-link nav-link-navbar nav-item-btn1 active text-center" aria-current="page" href="<?= $router->generate('main-home') ?>">
                         Accueil
                     </a>
                 </li>
-                <li class="nav-item nav-item-btn nav-link--article col-12 ">
+                <li class="nav-item nav-item-btn nav-link--article col-12 col-md-3  ">
                     <a class="nav-link nav-link-navbar d-flex justify-content-center align-items-center " href="#">
                         <div><p class="m-0"> Articles </p></div>
-                        <div class="arrow ml-1">►</div>
+                        <i class="fas fa-chevron-right arrow ml-3"></i>
                     </a>
-                <li class="nav-item col-12 text-center">
+                <li class="nav-item col-12 text-center col-md-2 ">
                     <a class="nav-link nav-link-navbar " href="<?= $router->generate('contact') ?>">
                         Contact
                     </a>
                 </li>
-                <div class="nav--connexion col-12 text-center">
-                    <a class="nav-link nav-link-navbar" href="<?= $router->generate('aPropos') ?>">
+                <div class="nav--connexion col-12 p-0 text-center col-md-4 ">
+                    <a class="nav-link nav-link-navbar " href="<?= $router->generate('aPropos') ?>">
                         A propos
                     </a>
                 </div>
