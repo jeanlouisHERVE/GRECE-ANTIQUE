@@ -13,7 +13,7 @@
   <footer class="footer">
       <div class="footer--empty "></div>
       <div class="footer--legal d-flex justify-content-center align-items-center ">
-          <ul class="footer--li d-flex pt-3">
+          <ul class="footer--li d-flex flex-column flex-md-row pt-3">
               <li class="footer--legalmentions footer--li mr-3">
                   <a class="footer--nav-link  " href="=">
                       Mentions légales
