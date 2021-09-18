@@ -22,9 +22,9 @@
                     <div class="article--category"><a href="<?= $router->generate('articlesByCategory', ['id' => $articleDetails->getCategory_Id()]) ?>" class="badge articleBadge "><?= $articleDetails->getCategory()->getName() ?></a></div>
                     <h1 class="article--main--title"><?= $articleDetails->getTitle() ?></h1>
                 </div>
-                <div class="article--under--title d-flex align-content-center flex-row">
-                    <p class="article--createdAt">Publié le : <?= $articleDetails->getCreatedAt("d-m-Y") ?></p>
-                    <p class="article--author">par <?= $articleDetails->getAuthor()->getFirstname() ?></p>
+                <div class="article--under--title d-flex flex-column flex-md-row align-content-center">
+                    <p class="article--createdAt align-self-start">Publié le : <?= $articleDetails->getCreatedAt("d-m-Y") ?></p>
+                    <p class="article--author align-self-start ml-md-2">par <?= $articleDetails->getAuthor()->getFirstname() ?></p>
                 </div>
             </div>
             <div class="article--main">
