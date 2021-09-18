@@ -9,7 +9,7 @@
 
     <!-- ************************container************************ -->
 
-    <div class="container main--container col-12">
+    <div class="container main--container col-12 ">
 
         <!-- ************************jumbotron************************ -->
 
@@ -36,17 +36,4 @@
             </div>
         </div>
 
-        <!-- ************************favorite articles************************ -->
- 
-        <div class="row favorite-articles col-12 pb-4 d-sm-flex flex-column align-items-center flex-lg-row justify-content-around ">
-            <?php foreach ($threeBestRatedArticle as $bestarticles) : ?>
-                <div class="card col-sm-12 mt-4 col-md-6 col-lg-3">
-                    <img src="./assets/img/delphi-1919203.jpg" class="card-img-top mt-3" alt="...">
-                    <div class="home--card--body d-flex flex-column justify-content-between">
-                        <h5 class="home--card--title"><?= $bestarticles->getTitle() ?></h5>
-                        <p class="home--card--text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="<?= $router->generate('articleById', ['id' => $bestarticles->getId()]) ?>" class="btn btn-outline-primary home--card--link">Consulter l'article</a>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
+      

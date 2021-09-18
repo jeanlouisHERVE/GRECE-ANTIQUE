@@ -13,7 +13,7 @@
 
         <div class="article--under--navbar--picture col-12"></div>
 
-        <!-- ************************welcome message************************ -->
+        <!-- ************************articles en détail************************ -->
 
         <div class="article--container col-12 col-md-8">
 

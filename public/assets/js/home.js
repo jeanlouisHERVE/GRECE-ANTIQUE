@@ -8,7 +8,7 @@ const home = {
     cardTextLength: function() {
         
         
-        const cardText = document.querySelectorAll('.home--card--text')
+        const cardText = document.querySelectorAll('.home--card--text');
         let content = ""
         let result = "";
         let final = "";
@@ -26,6 +26,8 @@ const home = {
             }
 
             cardText[i].textContent = final;
+
+            return final ;
         }     
 
     }       
