@@ -19,7 +19,7 @@
                 <h1 class="articlesByCategory--main--title">Liste des articles </h1>
                 <div class="articlesByCategory--list">
                 <table class="articlesByCategory--table table d-flex flex-column justify-content-center align-items-center col-11">
-                <tbody class="col-12">
+                <tbody class="articlesByCategory--tbody col-12">
                     <?php foreach ($articlesByCategory as $articleByCategory) : ?>
                         <tr class="articlesByCategory--unity d-flex justify-content-center col-12 ">
                             
