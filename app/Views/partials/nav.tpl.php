@@ -1,4 +1,39 @@
-<nav class="navbar navbar-dark fixed-top col-12 ">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light justify-content-between">
+
+    <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Articles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Liste complète</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Catégories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Categorie</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">A propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- <nav class="navbar navbar-dark fixed-top col-12 ">
     <div class="container navbar--container  col-12 d-flex justify-content-center align-content-center flex-md-row justify-content-lg-between" ;>
         <div class="narbar-logo col-sm-12 d-flex justify-content-center align-items-center col-md-4 justify-content-md-start">
             <a class="navbar--mainlogo logo" href="#">
@@ -59,12 +94,12 @@
                     Les mieux notés
                 </a>
             </li> -->
-            <!-- <li class="nav-item">
+<!-- <li class="nav-item">
                 <a class="nav-link contenu--item" href="<?= $router->generate('article-alphabetical') ?>">
                     Par ordre alphabétique
                 </a>
             </li> -->
 
-        </ul>
+<!-- </ul>
     </div>
-</nav>
+</nav> -->
