@@ -34,7 +34,7 @@
                 <tbody class="col-12 p-0">
                     <?php foreach ($titleList as $title) : ?>
                         <tr class="list--article--unity d-flex justify-content-center col-12 p-0 flex-row">
-                            <td class="list--article--column--category col-1 d-sm-none d-md-block"> <span class="badge categoryBadge "><?= $title->getCategory()->getName() ?></span></td>
+                            <td class="list--article--column--category col-1 d-sm-none d-md-block"> <span class="badge categoryBadge"><?= $title->getCategory()->getName() ?></span></td>
                             <td class="list--article--column--title col-11 col-md-8">
                                 <a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $title->getNumber()]) ?>">
                                     <h2><?= $title->getTitle() ?></h2>

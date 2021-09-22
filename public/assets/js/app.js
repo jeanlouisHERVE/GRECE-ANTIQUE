@@ -7,19 +7,26 @@ const app = {
 
     console.log("App Init !");
     home.init();
-    category.init();
+    navbar.init()
+  
 
     if (window.location.href.indexOf('categorie')>-1 === true) {
-      category.init();  
+      colorCategoryAll.init()  
     }  
    
     if (window.location.href.indexOf('articlelist')>-1 === true) {
-      articleList.init()
+      
+      colorCategoryAll.init()
       articleTask.init()
+      
     }
 
     if (window.location.href.indexOf('article/')>-1 === true) {
-      article.init()
+      colorCategory.init()
+    }
+
+    if (window.location.href.indexOf('contact')>-1 === true) {
+      contactTask.init()
     }
        
   },

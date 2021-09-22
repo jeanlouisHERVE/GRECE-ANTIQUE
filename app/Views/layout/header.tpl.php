@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/normalize.css" />
@@ -42,9 +42,8 @@
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/contactTask.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/articleTask.js"></script>
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/home.js"></script>
-    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/categoryList.js"></script>
-    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/article.js"></script>
-    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/articleList.js"></script>
+    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/colorCategory.js"></script>
+    <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/colorCategoryAll.js"></script>
 </head>
 
 <!-- ************************navbar************************ -->

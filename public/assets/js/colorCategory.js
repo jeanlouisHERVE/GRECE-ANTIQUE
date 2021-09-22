@@ -1,16 +1,16 @@
-const article = {
+const colorCategory = {
     init: function()
     {
         console.log('article init !')
-        article.colorCategory()
+        colorCategory.color()
            
     },
 
 
-    colorCategory: function() {
+    color: function() {
 
         console.log('colorCategory !')
-        const categoryName = document.querySelector('.articleBadge');
+        const categoryName = document.querySelector('.categoryBadge');
         let contentText= ' ';
         console.log(categoryName)
             if (categoryName.textContent == 'histoire') {

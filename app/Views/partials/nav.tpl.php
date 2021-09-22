@@ -22,9 +22,9 @@
         <a class="nav-link" href="<?= $router->generate('contact') ?>">Contact</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+    <form class="form-inline my-2 my-lg-0" >
+      <input class="form-control mr-sm-2 form--input" type="search" placeholder="Rechercher un article" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0 form--button" type="submit"><i class="fas fa-search"></i></button>
     </form>
   </div>
 </nav>
