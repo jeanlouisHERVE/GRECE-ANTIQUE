@@ -4,22 +4,22 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse collapsing navbar-collapse bg-light " id="navbarSupportedContent" >
+  <div class="collapse navbar-collapse bg-light " id="navbarSupportedContent" >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item ">
-        <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="<?= $router->generate('main-home') ?>">Accueil <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Articles</a>
+        <a class="nav-link" href="<?= $router->generate('article-list') ?>">Articles</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Catégories</a>
+        <a class="nav-link" href="<?= $router->generate('article-categories') ?>">Catégories</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">A propos</a>
+        <a class="nav-link" href="<?= $router->generate('aPropos') ?>">A propos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="<?= $router->generate('contact') ?>">Contact</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
