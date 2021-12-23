@@ -20,7 +20,7 @@ const colorCategoryAll = {
           } else if (categoryName[i].textContent == 'mythologie') {
               contentText = categoryName[i].classList.add('bg-info')
           } else if (categoryName[i].textContent == 'philosophie') {
-              contentText = categoryName[i].classList.add('bg-light').add('text-dark')
+              contentText = categoryName[i].classList.add('bg-light', 'text-secondary')
           } else if (categoryName[i].textContent == 'geographie') {
               contentText = categoryName[i].classList.add('bg-success')
           } else if (categoryName[i].textContent == 'politique') {
@@ -29,6 +29,8 @@ const colorCategoryAll = {
               contentText = categoryName[i].classList.add('bg-danger')
           } else if (categoryName[i].textContent == 'documents') {
               contentText = categoryName[i].classList.add('bg-dark')
+          } else if (categoryName[i].textContent == 'Art') {
+              contentText = categoryName[i].classList.add('text-warning')
           } else {
               contentText = categoryName[i].classList.add('pink')
           }

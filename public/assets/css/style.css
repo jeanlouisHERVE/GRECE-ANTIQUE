@@ -595,6 +595,13 @@ body {
   font-size: xx-large;
 }
 
+.articlesByCategory--main--title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
 .articlesByCategory--tbody {
   height: 150vh;
   max-height: 50vh;
@@ -633,6 +640,9 @@ body {
   color:black;
 }
 
+.article--category a {
+  text-decoration: none;
+}
 
 .article--above--title {
   margin-top: 20px;
