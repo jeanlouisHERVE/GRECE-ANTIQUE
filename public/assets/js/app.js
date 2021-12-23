@@ -1,7 +1,7 @@
 
 const app = {
 
-  
+  bddRoute : "http://localhost/adminer/?username=explorateur&db=GreceAntique",
 
   init: function() {
 

@@ -22,7 +22,7 @@
       <h1 class="contact--title">
         Contactez-nous
       </h1>
-      <form class="needs-validation " novalidate>
+      <form class="needs-validation " method="POST" novalidate>
 
         <div class="form-row  d-flex justify-content-between px-3">
           <div class="col-md-6 mb-3 ">
@@ -44,7 +44,7 @@
           <label for="validationCustomUsername">Email</label>
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text contact--imput" id="inputGroupPrepend">@</span>
+              <span class="input-group-text contact--imput" name="email" id="inputGroupPrepend">@</span>
             </div>
             <input type="text" class="form-control contact--imput" id="validationCustomUsername" placeholder="mark.otto@gmail.com" aria-describedby="inputGroupPrepend" required>
             <div class="invalid-feedback">
@@ -54,7 +54,7 @@
         </div>
         <div class="form-group col-12">
           <label for="exampleFormControlTextarea1">Message</label>
-          <textarea class="form-control contact--imput" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <textarea class="form-control contact--imput" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div class="form--button col-12 d-flex justify-content-center">
           <button class="btn form--button--contact mx-auto" type="submit">Envoyer</button>

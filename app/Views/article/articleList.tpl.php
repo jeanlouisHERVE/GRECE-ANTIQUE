@@ -17,12 +17,12 @@
             </div>
             <div class="list--article--top--menu--right col-md-4">
                 <div class="btn-group btn-group-toggle " data-toggle="buttons">
-                    <label class="filters filters--all btn btn-outline-primary active">
+                    <!-- <label class="filters filters--all btn btn-outline-primary active">
                         <input type="radio" name="options" id="option1" autocomplete="off" checked> A - Z
                     </label>
                     <label class="filters filters--date btn btn-outline-primary">
                         <input type="radio" name="options" id="option3" autocomplete="off"> Date
-                    </label>
+                    </label> -->
                     <div class="filters filters--category">
                         <a class="filters__choice" href="<?= $router->generate('article-categories') ?>">Voir les catégories</a>
                     </div>

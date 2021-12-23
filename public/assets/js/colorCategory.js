@@ -18,7 +18,7 @@ const colorCategory = {
             } else if (categoryName.textContent == 'mythologie') {
                 contentText = categoryName.classList.add('bg-info')
             } else if (categoryName.textContent == 'philosophie') {
-                contentText = categoryName.classList.add('bg-light')
+                contentText = categoryName.classList.add('bg-light').add('text-dark')
             } else if (categoryName.textContent == 'geographie') {
                 contentText = categoryName.classList.add('bg-success')
             } else if (categoryName.textContent == 'politique') {

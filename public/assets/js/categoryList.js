@@ -19,7 +19,7 @@ const category = {
             } else if (categoryName[i].textContent == 'mythologie') {
                 contentText = categoryName[i].classList.add('bg-info')
             } else if (categoryName[i].textContent == 'philosophie') {
-                contentText = categoryName[i].classList.add('bg-light')
+                contentText = categoryName[i].classList.add('bg-light').add('text-dark')
             } else if (categoryName[i].textContent == 'geographie') {
                 contentText = categoryName[i].classList.add('bg-success')
             } else if (categoryName[i].textContent == 'politique') {
