@@ -24,6 +24,11 @@
                       Politique de confidentialité
                   </a>
               </li>
+              <li class="footer--apropos mr-3">
+                  <a class="footer--nav-link  " href="<?= $router->generate('aPropos') ?>">
+                      A propos
+                  </a>
+              </li>
               <li class="footer--informations">
                   <a class="footer--nav-link  " href="<?= $router->generate('contact') ?>">
                       Contact
