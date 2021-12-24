@@ -7,10 +7,10 @@
       <span class="bar"></span>
     </div>
     <ul class="nav-menu">
-      <li><a href="#" class="nav-links">Home</a></li>
-      <li><a href="#" class="nav-links">Articles</a></li>
-      <li><a href="#" class="nav-links">Categories</a></li>
-      <li><a href="#" class="nav-links">Contact</a></li>
+      <li><a href="<?= $router->generate('main-home') ?>" class="nav-links">Home</a></li>
+      <li><a href="<?= $router->generate('article-list') ?>" class="nav-links">Articles</a></li>
+      <li><a href="<?= $router->generate('article-categories') ?>" class="nav-links">Categories</a></li>
+      <li><a href="<?= $router->generate('contact') ?>" class="nav-links">Contact</a></li>
       <li><a href="#" class="nav-links nav-links-btn">Connexion</a></li>
     </ul>
   </nav>

@@ -11,6 +11,7 @@
   margin: 0px;
   padding: 0px;
   background-color: white;
+  margin-top: 70px;
 }
 
 
@@ -23,9 +24,8 @@
   text-decoration: none;
   font-family: 'Bebas Neue', cursive;
   font-size: large;
-  color:black;
+  color:pink;
   margin: 0px;
-  margin-right: 0px;
 }
 
 .list--article--column--category {
@@ -57,7 +57,7 @@
 
 .list--article--unity td {
   padding :0px;
-  
+  height: 30px;
 }
 
 .list--article--unity h2 {
