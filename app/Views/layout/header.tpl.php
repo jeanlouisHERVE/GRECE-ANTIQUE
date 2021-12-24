@@ -26,6 +26,7 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/nav2.css" />
 
     <!-- javascript -->
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/app.js"></script>
@@ -39,5 +40,5 @@
 
 <!-- ************************navbar************************ -->
 <?php
-    include __DIR__.'/../partials/nav.tpl.php';
+    include __DIR__.'/../partials/nav2.tpl.php';
 ?>
