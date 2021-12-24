@@ -1,0 +1,27 @@
+
+/* FOOTER */
+
+
+.footer--legal {
+  background-color: white;
+  width: 100%;
+
+}
+.footer--li {
+  list-style-type: none; 
+  text-decoration: none;
+  
+
+}
+
+.footer--nav-link {
+  font-family: 'Lexend', sans-serif; 
+  color:black;
+}
+
+.footer--nav-link:hover {
+  font-family: 'Lexend', sans-serif; 
+  color:black;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}

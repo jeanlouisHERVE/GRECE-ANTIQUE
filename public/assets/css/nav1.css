@@ -1,0 +1,93 @@
+/* -------------- */
+/* ---NAVBAR----- */
+/* -------------- */
+
+
+/* NAVBAR */
+
+.navbar {
+  height: 60px;
+  background-color:white;
+  padding: 0px;
+}
+
+.navbar--container {
+  margin: 0px;
+  background-color:white;
+}
+
+ .vieux {
+  transform: scaleX(-1);
+}
+
+.navbar--maintitle--div {
+  margin-right: 20px;
+}
+
+
+.navbar--maintitle--link {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large ; 
+  color:black;
+  align-self: center;
+}
+
+.navbar--maintitle--link:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-menu {
+  color:black;
+}
+
+.navbar--menu .nav-item {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+  color:black;
+}
+
+.navbar--menu .nav-item .btn-link {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+ 
+
+}
+
+.nav-item .nav-link {
+  color:black;
+
+}
+
+.nav--connexion {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+
+}
+
+.nav--connexion .nav-link {
+  color:black;
+}
+
+.contenu {
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.contenu--item{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 15px;
+  padding-bottom: 1px;
+}
+
+.contenu--item:hover {
+    border-bottom: solid 1px black;
+    
+    
+}
+
+.open .arrow{
+  transform: rotate(90deg);
+}

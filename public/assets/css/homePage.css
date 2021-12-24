@@ -1,0 +1,94 @@
+/* ---------------------- */
+/* ---PAGE D'ACCUEIL----- */
+/* ---------------------- */
+
+
+/* BODY */
+body {
+  background-color: #caf0f8;
+  margin-top: 60px;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  background-image: url("../img/epidaure.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.jumbotron--homeTitle {
+  font-family: 'Bebas Neue', cursive; 
+  color:black;
+  background-color: white;
+
+}
+
+.jumbotron--subTitle {
+  color:black;
+  background-color: white;
+}
+
+/* HEADER */
+
+/* CONTAINER */
+
+.main--container {
+  
+  height: 100%; 
+  padding-left:0px; 
+  padding-right:0px; 
+  width:100vw;
+}
+
+/* WELCOME MESSAGE */
+.welcome--message {
+  margin-left:0px; 
+  margin-right:0px; 
+  background-color: white;
+}
+
+.welcome--presentation {
+  z-index: 6; 
+  height: auto; 
+}
+
+.welcome--picture {
+  width: 100%;
+  background-image: url("../img/athens-3411147.jpg");
+  background-size: cover;
+  background-position: center;
+  height:50vh;
+}
+
+.welcome--presentation--text {
+  font-size: larger; 
+  font-family: 'Lexend', sans-serif;
+  color: black;
+}
+
+.welcome--thank {
+  font-size: larger; 
+  font-family: 'Lexend', sans-serif;
+}
+
+
+.welcome--button {
+  margin-top: 50px;
+  color: black;
+  border: black solid 1px;
+  font-weight: 400;
+  font-family: 'Lexend', sans-serif;
+}
+
+.welcome--button:hover {
+  background-color: black;
+  border: black solid 1px;
+  font-family: 'Lexend', sans-serif;
+  color: white;
+}
+
+.welcome--button--a {
+  text-decoration: none;
+  }
