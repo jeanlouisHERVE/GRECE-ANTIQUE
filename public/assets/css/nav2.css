@@ -1,3 +1,5 @@
+
+
 :root  {
   --darkgray: #212329;
   --brightred:#F9423D;
@@ -96,11 +98,13 @@
     left: -100%;
     opacity: 0;
     transition: all 0.5s ease;
+    font-family: 'Lexend', sans-serif;
   }
 
   #navbar-logo {
     margin-left: 20px;
     width: 30%;
+    font-family: 'Lexend', sans-serif;
   }
 
   .nav-menu.active {
@@ -108,9 +112,10 @@
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
+    padding-left: 0;
   }
 
-  nav-links {
+  .nav-links {
     text-align: center;
     line-height: 60px;
     width: 100%;
@@ -125,6 +130,7 @@
 
   .navbar {
     width: 100%;
+    grid-template-columns: 2fr 1fr 1fr;
   }
 
   .nav-links-btn {
@@ -143,7 +149,6 @@
     background-color: var(--brightred);
     color: var(--white);
     transition: all 0.4 ease-out;
-
   }
 
   #mobile-menu {
@@ -151,7 +156,6 @@
     top: 20%;
     right: 5%;
     transform: translate(5%, 20%);
-
   }
 
   .menu-toggle .bar {

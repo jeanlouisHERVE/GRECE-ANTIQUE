@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/nav2.css" />
+    <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/error404.css" />
 
     <!-- javascript -->
     <script defer type="text/javascript" src="/GRECE-ANTIQUE/public/assets/js/app.js"></script>
