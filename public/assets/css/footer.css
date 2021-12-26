@@ -17,6 +17,7 @@
 .footer--nav-link {
   font-family: 'Lexend', sans-serif; 
   color:black;
+  font-size: 16px;
 }
 
 .footer--nav-link:hover {

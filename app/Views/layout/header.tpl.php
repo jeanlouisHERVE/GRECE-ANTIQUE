@@ -24,6 +24,8 @@
     
 
     <!-- css -->
+    <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/normalize.css" />   
+    <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/nav2.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/aproposPage.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/articlePage.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/articlesByCategory.css" />
@@ -33,8 +35,9 @@
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/error404.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/footer.css" />
     <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/homePage.css" />
-    <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/nav2.css" />
-    <link rel="stylesheet" type="text/css" href="/GRECE-ANTIQUE/public/assets/css/normalize.css" />   
+    
+    
+    
     
 
     <!-- javascript -->
