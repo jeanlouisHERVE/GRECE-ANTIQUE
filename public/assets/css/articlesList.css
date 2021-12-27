@@ -28,6 +28,11 @@
   margin: 0px;
 }
 
+.list--article--h1 .text-left {
+  color: black;
+  font-weight: 400;
+}
+
 .list--article--column--category {
   height: 30px;
 

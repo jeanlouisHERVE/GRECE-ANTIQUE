@@ -27,7 +27,16 @@
         <div class="form-row  d-flex justify-content-between px-3">
           <div class="col-md-6 mb-3 ">
             <label for="validationCustom01">Nom</label>
-            <input type="text" class="form-control contact--imput" id="validationCustom01" placeholder="First name" value="Mark" required>
+            <input 
+              type="text" 
+              name="lastname" 
+              autocomplete="off"
+              class="form-control contact--imput" 
+              id="validationCustom01" 
+              placeholder="First name" 
+              value="Mark" 
+              required
+            >
             <div class="valid-feedback">
               Looks good!
             </div>

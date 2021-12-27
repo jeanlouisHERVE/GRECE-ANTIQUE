@@ -1,7 +1,11 @@
 <div class="nav-container">
   <nav class="navbar">
-    <h1 id="navbar-logo">GRECE-ANTIQUE</h1>
-    <div class="menu-toggle" id="mobile-menu">
+    <div class="navbar--title--container">
+      <img src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top achille" alt=""> 
+      <h1 id="navbar-logo">GRECE-ANTIQUE</h1>
+      <img src="<?= $absoluteUrl ?>assets/img/vieuxcarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top vieux" alt="">
+    </div>
+    <div class="menu-toggle" id="mobile-menu">  
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>

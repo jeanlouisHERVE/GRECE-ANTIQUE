@@ -87,6 +87,7 @@ body {
   border: black solid 1px;
   font-family: 'Lexend', sans-serif;
   color: white;
+  transition: all 0.3s ease-out;
 }
 
 .welcome--button--a {

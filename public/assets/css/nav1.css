@@ -1,10 +1,10 @@
-/* -------------- */
+/* --------------
 /* ---NAVBAR----- */
 /* -------------- */
 
 
 /* NAVBAR */
-
+/* 
 .navbar {
   height: 60px;
   background-color:white;
@@ -89,5 +89,5 @@
 }
 
 .open .arrow{
-  transform: rotate(90deg);
-}
+  transform: rotate(90deg); */
+} 

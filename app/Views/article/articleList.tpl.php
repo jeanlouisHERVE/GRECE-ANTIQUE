@@ -29,18 +29,18 @@
                 </div>
             </div>
         </div>
-        <div class="list--article--under--picture d-flex justify-content-center col-sm-12 p-0 mt-3 col-md-10">
+        <div class="list--article--under--picture d-flex justify-content-center col-sm-12 p-0 mt-3 col-lg-10">
             <table class="table d-flex flex-column justify-content-center col-12 p-0">
                 <tbody class="col-12 p-0">
                     <?php foreach ($titleList as $title) : ?>
-                        <tr class="list--article--unity d-flex justify-content-center col-12 p-0 flex-row">
-                            <td class="list--article--column--category col-1 d-sm-none d-md-block"> <span class="badge categoryBadge"><?= $title->getCategory()->getName() ?></span></td>
-                            <td class="list--article--column--title col-11 col-md-8">
+                        <tr class="list--article--unity d-flex justify-content-center col-12 p-0  flex-row">
+                            <td class="list--article--column--category  d-none d-md-block col-2"> <span class="badge categoryBadge"><?= $title->getCategory()->getName() ?></span></td>
+                            <td class="list--article--column--title col-11 col-md-8 ">
                                 <a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $title->getNumber()]) ?>">
                                     <h2><?= $title->getTitle() ?></h2>
                                 </a>
                             </td>
-                            <td class="list--article--column--date d-sm-none d-md-flex">
+                            <td class="list--article--column--date d-none d-lg-flex col-md-2">
                                 <p><?= $title->getCreatedAt("d-m-Y") ?></p>
                             </td>
                         </tr>

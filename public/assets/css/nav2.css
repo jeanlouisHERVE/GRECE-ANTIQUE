@@ -5,11 +5,13 @@
   --brightred:#F9423D;
   --lightred:#f9433dcc;
   --white:#fff;
+  --lightblue: #7BC9FE;
 }
+
 
 .nav-container {
  width: 100%;
- background-color: var(--darkgray);
+ background-color: var(--white);
  position: fixed;
  z-index: 99;
  top :0;
@@ -17,21 +19,33 @@
 
 .navbar {
   display: grid;
-  grid-template-columns: 0.2fr auto 1fr;
+  grid-template-columns: 0.5fr auto 1fr;
   align-items: center;
   height: 70px;
   width: 90%;
   max-width: 1720px;
   margin: 0 auto;
-  background-color: var(--darkgray);
+  background-color: var(--white);
 }
 
-#navbar-logo {
-  color : var(--white);
-  justify-self: start;
-  margin-left: 20px;
-  font-size: large;
+.navbar--title--container {
+  display: flex;
+  flex-direction: row;
+}
 
+
+#navbar-logo {
+  color : var(--darkgray);
+  justify-self: start;
+  font-size: 35px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 500;
+  margin: auto 0;
+}
+
+.vieux {
+  transform: scaleX(-1);
+  margin-left: 7px;
 }
 
 #navbar-logo {
@@ -49,27 +63,29 @@
 }
 
 .nav-links {
-  color: var(--white);
+  color: var(--darkgray);
   text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  text-transform: uppercase;
 }
 
 .nav-links:hover {
   transition: all 0.2s ease-out;
-  color: var(--brightred);
+  color: var(--lightblue);
 }
 
 .nav-links-btn {
-  background-color: var(--brightred);
+  background-color: var(--lightblue);
   padding: 6px 16px;
   border-radius: 4px;
 }
 
 .nav-links-btn:hover{
   background-color: transparent;
-  color: var(--white);
+  color: var(--lightblue);
   padding: 5px 15px;
   border-radius: 4px;
-  border: solid 1px var(--brightred);
+  border: solid 1px var(--lightblue);
   transition: all 0.3s ease-out;
 }
 
@@ -78,10 +94,10 @@
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background: var(--white);
+  background: var(--lightblue);
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 915px) {
   /* .nav-container {
     position: relative;
     top: 0;
@@ -90,7 +106,7 @@
   .nav-menu {
     display: grid;
     grid-template-columns: auto;
-    background: var(--brightred);
+    background: var(--lightblue);
     margin: 0;
     width: 100%;
     position: absolute;
@@ -103,8 +119,12 @@
 
   #navbar-logo {
     margin-left: 20px;
-    width: 30%;
-    font-family: 'Lexend', sans-serif;
+    width: 40%;
+    font-size: 30px;
+    padding: auto;
+    margin-left: 0;
+    font-family: 'Bebas Neue', cursive;
+    align-self: center;
   }
 
   .nav-menu.active {
@@ -123,8 +143,8 @@
   }
 
   .nav-links:hover {
-    background-color: var(--brightred);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--lightblue);
     transition: all 0.4s ease-out;
   }
 
@@ -146,8 +166,8 @@
     border: none;
     padding: 0;
     border-radius: 0;
-    background-color: var(--brightred);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--darkgray);
     transition: all 0.4 ease-out;
   }
 
