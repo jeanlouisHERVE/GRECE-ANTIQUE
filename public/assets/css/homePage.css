@@ -18,6 +18,12 @@ body {
   height: 100vh;
 }
 
+@media (max-width: 768px) { 
+  .jumbotron {
+    height: 50vh;
+  }
+}
+
 .jumbotron--homeTitle {
   font-family: 'Bebas Neue', cursive; 
   color:black;
