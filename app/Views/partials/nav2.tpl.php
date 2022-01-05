@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div class="navbar--title--container">
       <img src="<?= $absoluteUrl ?>assets/img/achillecarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top achille" alt=""> 
-      <h1 id="navbar-logo">GRECE-ANTIQUE</h1>
+      <a href="<?= $router->generate('main-home') ?>"><h1 id="navbar-logo">GreceAntique.fr</h1></a>
       <img src="<?= $absoluteUrl ?>assets/img/vieuxcarre.jpg" alt="" width="50px" height="50px" class="d-inline-block align-text-top vieux" alt="">
     </div>
     <div class="menu-toggle" id="mobile-menu">  

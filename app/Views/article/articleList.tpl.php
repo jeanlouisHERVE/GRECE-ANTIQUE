@@ -11,7 +11,7 @@
 
     <div class="list--article--main--container col-12 d-flex flex-column justify-content-center">
         <div class="list--article--under--navbar--picture "></div>
-        <div class="list--article--hfilter d-flex justify-content-center align-items-center justify-content-md-between">
+        <div class="list--article--header d-flex justify-content-center align-items-center justify-content-md-between">
             <div class="list--article--h1 col-sm-6 col-md-4">
                 <h1 class="text-left">Liste des articles</h1>
             </div>
@@ -34,13 +34,13 @@
                 <tbody class="col-12 p-0">
                     <?php foreach ($titleList as $title) : ?>
                         <tr class="list--article--unity d-flex justify-content-center col-12 p-0  flex-row">
-                            <td class="list--article--column--category  d-none d-md-block col-2"> <span class="badge categoryBadge"><?= $title->getCategory()->getName() ?></span></td>
-                            <td class="list--article--column--title col-11 col-md-8 ">
+                            <td class="list--article--column--category d-none d-md-flex justify-content-start col-1"> <span class="badge categoryBadge"><?= $title->getCategory()->getName() ?></span></td>
+                            <td class="list--article--column--title d-flex justify-content-start align-items-center col-11 col-md-8 ">
                                 <a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $title->getNumber()]) ?>">
-                                    <h2><?= $title->getTitle() ?></h2>
+                                    <h2 class="list--article--column--title--main"><?= $title->getTitle() ?></h2>
                                 </a>
                             </td>
-                            <td class="list--article--column--date d-none d-lg-flex col-md-2">
+                            <td class="list--article--column--date d-none d-md-flex col-md-1 justify-content-end ">
                                 <p><?= $title->getCreatedAt("d-m-Y") ?></p>
                             </td>
                         </tr>

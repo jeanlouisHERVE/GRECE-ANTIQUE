@@ -7,6 +7,10 @@
   height: 500px;
 }
 
+.list--article--header {
+  margin-top: 22px;
+}
+
 .list--article--main--container {
   margin: 0px;
   padding: 0px;
@@ -31,11 +35,17 @@
 .list--article--h1 .text-left {
   color: black;
   font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 500px) { 
+  .list--article--h1 .text-left {
+    font-size: 20px;
+  }
 }
 
 .list--article--column--category {
   height: 30px;
-
 }
 
 .list--article--top--menu--right {
@@ -54,9 +64,18 @@
 }
 
 
+@media (max-width: 500px) { 
+  .filters__choice {
+    font-size: 15px;
+  }
+}
+
+
+
 .list--article--unity {
   margin-left: auto;
   margin-right: auto;
+  overflow-y: hidden;
 }
 
 
@@ -71,6 +90,11 @@
   margin-bottom: 0px;
 }
 
+@media (max-width: 500px) { 
+  .list--article--unity h2 {
+    font-size: 15px;
+  }
+}
 
 .list--article--a {
   align-self: left;
@@ -78,6 +102,7 @@
   color:black;
   width: 100%;
   margin: 0px;
+  overflow-y: hidden;
 }
 
 
@@ -85,8 +110,12 @@
   text-decoration: none;
   margin: 0px;
   
+  
 }
 
+.list--article--column--title--main {
+  
+}
 
 .list--article--unity .badge {
   height: 20px;

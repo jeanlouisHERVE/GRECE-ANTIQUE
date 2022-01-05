@@ -12,7 +12,6 @@ const colorCategory = {
         console.log('colorCategory !')
         const categoryName = document.querySelector('.categoryBadge');
         let contentText= ' ';
-        console.log(categoryName)
             if (categoryName.textContent == 'histoire') {
                 contentText = categoryName.classList.add('bg-warning')
             } else if (categoryName.textContent == 'mythologie') {

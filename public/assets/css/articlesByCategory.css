@@ -10,10 +10,22 @@
   height: 500px;
 }
 
+.articlesByCategory--main {
+  background-color: white;
+}
 
+.articlesByCategory--main--title {
+  margin-top: 0;
+  padding-top: 26px;
+  color: black;
+  font-family: 'Bebas Neue', sans-serif; 
+  font-size: 40px;
+  font-weight: 400;
+}
 .articlesByCategory--list {
   display: flex;
   flex-direction: column;
+
 }
 
 .articlesByCategory--unity {

@@ -15,10 +15,8 @@ const app = {
     }  
    
     if (window.location.href.indexOf('articlelist')>-1 === true) {
-      
       colorCategoryAll.init()
       articleTask.init()
-      
     }
 
     if (window.location.href.indexOf('article/')>-1 === true) {
