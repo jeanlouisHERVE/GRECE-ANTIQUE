@@ -125,8 +125,8 @@
 
   #navbar-logo {
     margin-left: 20px;
-    width: 40%;
-    font-size: 30px;
+    width: 100%;
+    font-size: 25px;
     padding: auto;
     margin-left: 0;
     font-family: 'Bebas Neue', cursive;
@@ -205,3 +205,4 @@
     transform: translateY(-8px) rotate(-45deg)
   }
 }
+
