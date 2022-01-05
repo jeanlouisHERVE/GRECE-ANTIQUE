@@ -11,7 +11,8 @@ const app = {
   
 
     if (window.location.href.indexOf('categorie')>-1 === true) {
-      colorCategoryAll.init()  
+      colorCategoryAll.init() 
+      articleTask.init()
     }  
    
     if (window.location.href.indexOf('articlelist')>-1 === true) {

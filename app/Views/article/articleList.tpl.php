@@ -25,7 +25,7 @@
             <table class="table d-flex flex-column justify-content-center col-12 p-0">
                 <tbody class="col-12 p-0">
                     <?php foreach ($titleList as $title) : ?>
-                        <tr class="list--article--unity d-flex justify-content-center col-12 p-0  flex-row">
+                        <tr class="list--article--unity d-flex justify-content-center col-12 p-0 flex-row">
                             <td class="list--article--column--category d-none d-lg-flex justify-content-start col-1"> <span class="badge categoryBadge"><?= $title->getCategory()->getName() ?></span></td>
                             <td class="list--article--column--title d-flex justify-content-start align-items-center col-11 col-md-8 ">
                                 <a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $title->getNumber()]) ?>">
