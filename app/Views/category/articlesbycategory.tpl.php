@@ -22,7 +22,7 @@
                 <tbody class="articlesByCategory--tbody col-12 p-0">
                     <?php foreach ($articlesByCategory as $articleByCategory) : ?>
                         <tr class="articlesByCategory--unity d-flex justify-content-center col-12 p-0">   
-                            <td class="articlesByCategory--column--category d-md-flex justify-content-start col-2"> <span class="badge categoryBadge"><?= $articleByCategory->getCategory()->getName() ?></span></td>
+                            <td class="articlesByCategory--column--category d-md-flex justify-content-start col-2"> <span class="badge articlesByCategory--categoryBadge"><?= $articleByCategory->getCategory()->getName() ?></span></td>
                             <td class="articlesByCategory--column--title d-flex justify-content-start align-items-center col-10 col-md-8">
                                 <a class="list--article--a" href="<?= $router->generate('articleById', ['id' => $articleByCategory->getNumber()]) ?>">
                                     <h2><?= $articleByCategory->getTitle() ?></h2>

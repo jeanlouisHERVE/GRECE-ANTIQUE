@@ -21,6 +21,14 @@
    font-family: 'Lexend', sans-serif; 
    color:black;
  }
+
+ @media (max-width: 600px) { 
+  .article--container  {
+    margin-bottom: 0;
+    padding: 10px 15px;
+    border : none;
+  }
+}
  
  .article--category a {
    text-decoration: none;
@@ -29,7 +37,6 @@
  .article--above--title {
    margin-top: 20px;
  }
- 
  
  .articleBadge .docs {
    background-color: red;
@@ -46,14 +53,30 @@
    margin-bottom: 10px;
    font-weight: 800;
    color: black;
- 
  }
- 
+
+ @media (max-width: 768px) { 
+  .article--main--title  {
+    font-size: 30px;
+  }
+ }
+ @media (max-width: 600px) { 
+  .article--main--title  {
+    font-size: 20px;
+  }
+ }
+
  .article--under--title {
    border-bottom: black 1px solid;
    margin-bottom: 20px;
    padding-bottom: 10px;
    color: black;
+ }
+
+ @media (max-width: 600px) { 
+  .article--under--title {
+    font-size: 14px;
+  }
  }
  
  .article--createdAt {
@@ -68,7 +91,13 @@
  .article--main {
    margin-top: 40px;
    color: black;
- 
+ }
+
+ @media (max-width: 600px) { 
+  .article--main {
+    font-size: 12px;
+    border-bottom: 1px solid black;
+  }
  }
   
  .article--container h2{
@@ -76,8 +105,6 @@
    padding-bottom: 10px;
    font-weight: 600;
    color: black;
-   
-   
  }
  
  .article--container h3 {

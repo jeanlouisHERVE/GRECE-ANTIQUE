@@ -15,7 +15,7 @@
 
         <!-- ************************articles en détail************************ -->
 
-        <div class="article--container col-12 col-md-8">
+        <div class="article--container col-12 col-md-10 col-lg-8">
 
             <div class="article--entete d-flex flex-column align-content-end">
                 <div class="article--above--title">

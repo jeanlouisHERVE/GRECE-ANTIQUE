@@ -68,11 +68,10 @@
 }
 
 @media (max-width: 500px) { 
-  .categoryBadge {
+  .articlesByCategory--categoryBadge {
     padding-top: 7px;
     margin-left: 5px;
     font-size: 8px;
-
   }
 }
 
